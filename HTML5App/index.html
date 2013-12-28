@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>HeroPro</title>
+<style type="text/css">
+body {
+	background-color: cyan;
+}
+</style>
+</head>
+<head>
+		<title>GoPro WiFi bacpac WEB App</title>
+		<script type='text/JavaScript'>
+			function getXhr(){
+				var xhr = null;
+				if(window.XMLHttpRequest) // Firefox et autres
+					xhr = new XMLHttpRequest();
+				else if(window.ActiveXObject){ // Internet Explorer
+					try {
+						xhr = new ActiveXObject("Msxml2.XMLHTTP");
+					} catch (e) {
+						xhr = new ActiveXObject("Microsoft.XMLHTTP");
+					}
+				}
+				else { // XMLHttpRequest non support� par le navigateur
+					alert("Votre navigateur ne supporte pas les objets XMLHTTPRequest...");
+					xhr = false;
+				}
+				return xhr
+			}
+			
+			/**
+			* Command
+			*/
+			function command(device, app, command){
+				var xhr = getXhr()
+				// On d�fini ce qu'on va faire quand on aura la r�ponse
+				xhr.onreadystatechange = function(){
+					// On ne fait quelque chose que si on a tout re�u et que le serveur est ok
+					if(xhr.readyState == 4 && xhr.status == 200){
+						alert(xhr.responseText);
+					}
+				}
+				xhr.open('GET','http://10.5.5.9:80/'+device+'/'+app+'?t='+document.getElementById('wifiPassword').value+'&p='+command);
+				xhr.send(null);
+			}
+		</script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+	<body>
+		
+<big>HeroPro App</big>
+                    
+                    <p>Type your GoPro Password ("goprohero" default):
+                  <br><input required="required" placeholder="goprohero" id="wifiPassword"
+              type="password" class="password" input autocomplete="on" />
+				  
+				 
+                        <p><p><button onclick="command('bacpac','PW','%01')">Turn GoPro ON</button>
+                        <p><p><button onclick="command('bacpac','SH','%01')">Fire!</button>
+                      <p><p><button onclick="command('bacpac','SH','%00')">Stop </button>
+                  
+                    <p>
+                      <p><button onclick="command('bacpac','PW','%00')">
+                        <p>Turn GoPro OFF
+                      </button>
+                    
+                    <p>Preview:
+                    <br><p><button onclick="command('camera','PV','%02')">On</button>
+                  <br><p><button onclick="command('camera','PV','%00')">Off</button>
+                  <p>Live Preview:
+                  <br><a href="http://10.5.5.9:8080/live/amba.m3u8">iOS devices</a>
+                  <br><a href="vlc://http://10.5.5.9:8080/live/amba.m3u8">Android Devices</a>
+					    
+                         <p>Mode<p><button onclick="command('camera','CM','%00')">Video</button>
+					<p><button onclick="command('camera','CM','%01')">Photo</button>
+					<p><button onclick="command('camera','CM','%02')">Burst</button>
+					<p><button onclick="command('camera','CM','%03')">Timelapse</button>
+					<p><button onclick="command('camera','CM','%04')">Timer (HERO2)</button>&nbsp; <p><button onclick="command('camera','CM','%05')">Play (HDMI)</button>
+                  
+<p>Video Resolution Black Ed:
+					<br><i>NOTE: SOME BUTTONS LEAD DIFFERENT RESOLUTIONS!</i>
+                  
+                  
+                  <p> <p><button onclick="command('camera','VR','%02')">4KCin12FPS</button>
+<p><button onclick="command('camera','VR','%03')">2.7kCin24</button>
+<p><button onclick="command('camera','VR','%05')">1080 25FPS</button>
+<p><button onclick="command('camera','VR','%03')">960 48FPS</button>
+<p><button onclick="command('camera','VR','%06')">720 60FPS</button></td>
+				
+                
+                        <p>Video Resolution HERO2 and HERO3 silver:
+					<p>
+                    <p><button onclick="command('camera','VR','%00')">WVGA-60</button>
+					<p><button onclick="command('camera','VR','%01')">WVGA-120</button>
+					<p><button onclick="command('camera','VR','%02')">720-30</button>
+					<p><button onclick="command('camera','VR','%03')">720-60</button>
+					<p><button onclick="command('camera','VR','%04')">960-30</button>
+					<p><button onclick="command('camera','VR','%05')">960-40</button>
+					<p><button onclick="command('camera','VR','%06')">1080-30</button>&nbsp;</td>
+				      </tr>
+					  <tr>
+					    <td>
+                        <p>White Balance (HERO3) Protune ON ONLY:
+					<p>
+                    <p><button onclick="command('camera','PT','%01')">Protune ON</button>&nbsp;
+					<p>
+                  <p><button onclick="command('camera','WB','%00')">AUTO</button>&nbsp;
+                  <p><button onclick="command('camera','WB','%01')">3000k</button>
+                    <p><p><button onclick="command('camera','WB','%02')">5500k</button>                    
+                    <p><p><button onclick="command('camera','WB','%03')">6500k</button>
+                    <p><p><button onclick="command('camera','WB','%04')">CAM RAW</button>&nbsp;
+                        </td>
+					    <td>
+                        <p>&nbsp;
+				  <p>Orientation:
+					<p>
+                    <p><button onclick="command('camera','UP','%00')">Up</button>
+					<p><button onclick="command('camera','UP','%01')">Down</button>&nbsp;
+				  
+
+					
+				  <p>FOV:
+					<p>
+                    <p><button onclick="command('camera','FV','%00')">wide</button>
+					<p><button onclick="command('camera','FV','%01')">medium</button>
+					<p><button onclick="command('camera','FV','%02')">narrow</button>&nbsp; 
+					<p>Photo Definition:
+				  <p>
+                    <p><button onclick="command('camera','PR','%00')">11mp wide</button>
+					<p><button onclick="command('camera','PR','%01')">8mp medium</button>
+					<p><button onclick="command('camera','PR','%02')">5mp wide</button>
+					<p><button onclick="command('camera','PR','%03')">5mp medium</button>&nbsp;
+					<p>Timelapse Interval:
+					<p>
+                    <p><button onclick="command('camera','TI','%00')">0,5sec</button>
+					<p><button onclick="command('camera','TI','%01')">1sec</button>
+					<p><button onclick="command('camera','TI','%02')">2sec</button>
+					<p><button onclick="command('camera','TI','%05')">5sec</button>
+					<p><button onclick="command('camera','TI','%0a')">10sec</button>
+					<p><button onclick="command('camera','TI','%1e')">30sec</button>
+					<p><button onclick="command('camera','TI','%3c')">60sec</button>&nbsp;
+					<p>Volume:
+					<p>
+                    <p><button onclick="command('camera','BS','%00')">0%</button>
+					<p><button onclick="command('camera','BS','%01')">70%</button>
+					<p><button onclick="command('camera','BS','%02')">100%</button>
+					    <td>
+                        <p>Continuous Shot (HERO3):
+                    <p>
+  <p><button onclick="command('camera','CS','%00')">Single</button>
+  <p> <p><button onclick="command('camera','CS','%03')">3SPS</button>
+    <p><p><button onclick="command('camera','CS','%05')">5SPS</button> 
+    <p> <p><button onclick="command('camera','CS','%0a')">10SPS</button>
+                    <p>Burst Rate (Black Ed):                                         
+                    <p>
+                      <p><button onclick="command('camera','BU','%00')">3/1s</button>
+                  <p><p><button onclick="command('camera','BU','%02')">10/1s</button>
+                  <p><p><button onclick="command('camera','BU','%03')">10/2s</button>
+                  <p><p><button onclick="command('camera','BU','%04')">30/1s</button>
+                  <p><p><button onclick="command('camera','BU','%05')">30/2s</button>
+                      <p><p><button onclick="command('camera','BU','%06')">30/3s</button>&nbsp;</td>
+				      </tr>
+					  <tr>
+					    <td>&nbsp;</td>
+					    <td>
+                        <p><a href="mailto:mail@chernowii.com?&subject=HeroPro&body=Write here">Send suggestions, bugs, reports...</a>&nbsp;</td>
+					    <td>&nbsp;</td>
+				      </tr>
+				  </table>
+					<p>&nbsp; 
+                    <p><br/>
+                                        
+</body>
+</html>
