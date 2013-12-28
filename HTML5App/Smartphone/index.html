@@ -50,7 +50,7 @@ body {
 </head>
 	<body>
 		
-<big>HeroPro App</big>
+<big>HeroPro App
                     
                     <p>Type your GoPro Password ("goprohero" default):
                   <br><input required="required" placeholder="goprohero" id="wifiPassword"
@@ -69,15 +69,17 @@ body {
                     <p>Preview:
                     <br><p><button onclick="command('camera','PV','%02')">On</button>
                   <br><p><button onclick="command('camera','PV','%00')">Off</button>
-                  <p>Live Preview:
-                  <br><a href="http://10.5.5.9:8080/live/amba.m3u8">iOS devices</a>
-                  <br><a href="vlc://http://10.5.5.9:8080/live/amba.m3u8">Android Devices</a>
+                  
+                  <p><button><a href="http://10.5.5.9:8080/live/amba.m3u8">Live Preview for iOS devices</a></button>
+                  <p><button><a href="http://10.5.5.9:8080/live/amba.m3u8">Live Preview for AndroidDevices <br>(Must have VLC installed)</a></button>
+                  <br><i>No software avaible for WP8 :(</i>
+                  
 					    
                          <p>Mode<p><button onclick="command('camera','CM','%00')">Video</button>
 					<p><button onclick="command('camera','CM','%01')">Photo</button>
 					<p><button onclick="command('camera','CM','%02')">Burst</button>
 					<p><button onclick="command('camera','CM','%03')">Timelapse</button>
-					<p><button onclick="command('camera','CM','%04')">Timer (HERO2)</button>&nbsp; <p><button onclick="command('camera','CM','%05')">Play (HDMI)</button>
+					<p><button onclick="command('camera','CM','%04')">Timer (HERO2)</button> <p><button onclick="command('camera','CM','%05')">Play (HDMI)</button>
                   
 <p>Video Resolution Black Ed:
 					<br><i>NOTE: SOME BUTTONS LEAD DIFFERENT RESOLUTIONS!</i>
@@ -87,7 +89,7 @@ body {
 <p><button onclick="command('camera','VR','%03')">2.7kCin24</button>
 <p><button onclick="command('camera','VR','%05')">1080 25FPS</button>
 <p><button onclick="command('camera','VR','%03')">960 48FPS</button>
-<p><button onclick="command('camera','VR','%06')">720 60FPS</button></td>
+<p><button onclick="command('camera','VR','%06')">720 60FPS</button>
 				
                 
                         <p>Video Resolution HERO2 and HERO3 silver:
@@ -98,26 +100,26 @@ body {
 					<p><button onclick="command('camera','VR','%03')">720-60</button>
 					<p><button onclick="command('camera','VR','%04')">960-30</button>
 					<p><button onclick="command('camera','VR','%05')">960-40</button>
-					<p><button onclick="command('camera','VR','%06')">1080-30</button>&nbsp;</td>
-				      </tr>
-					  <tr>
-					    <td>
+					<p><button onclick="command('camera','VR','%06')">1080-30</button>
+				      
+					  
+					    <p><button
                         <p>White Balance (HERO3) Protune ON ONLY:
 					<p>
-                    <p><button onclick="command('camera','PT','%01')">Protune ON</button>&nbsp;
+                    <p><button onclick="command('camera','PT','%01')">Protune ON</button>
 					<p>
-                  <p><button onclick="command('camera','WB','%00')">AUTO</button>&nbsp;
+                  <p><button onclick="command('camera','WB','%00')">AUTO</button>
                   <p><button onclick="command('camera','WB','%01')">3000k</button>
                     <p><p><button onclick="command('camera','WB','%02')">5500k</button>                    
                     <p><p><button onclick="command('camera','WB','%03')">6500k</button>
-                    <p><p><button onclick="command('camera','WB','%04')">CAM RAW</button>&nbsp;
-                        </td>
-					    <td>
-                        <p>&nbsp;
+                    <p><p><button onclick="command('camera','WB','%04')">CAM RAW</button>
+                        
+					    <p><button
+                        <p>
 				  <p>Orientation:
 					<p>
                     <p><button onclick="command('camera','UP','%00')">Up</button>
-					<p><button onclick="command('camera','UP','%01')">Down</button>&nbsp;
+					<p><button onclick="command('camera','UP','%01')">Down</button>
 				  
 
 					
@@ -125,13 +127,13 @@ body {
 					<p>
                     <p><button onclick="command('camera','FV','%00')">wide</button>
 					<p><button onclick="command('camera','FV','%01')">medium</button>
-					<p><button onclick="command('camera','FV','%02')">narrow</button>&nbsp; 
+					<p><button onclick="command('camera','FV','%02')">narrow</button> 
 					<p>Photo Definition:
 				  <p>
                     <p><button onclick="command('camera','PR','%00')">11mp wide</button>
 					<p><button onclick="command('camera','PR','%01')">8mp medium</button>
 					<p><button onclick="command('camera','PR','%02')">5mp wide</button>
-					<p><button onclick="command('camera','PR','%03')">5mp medium</button>&nbsp;
+					<p><button onclick="command('camera','PR','%03')">5mp medium</button>
 					<p>Timelapse Interval:
 					<p>
                     <p><button onclick="command('camera','TI','%00')">0,5sec</button>
@@ -140,13 +142,13 @@ body {
 					<p><button onclick="command('camera','TI','%05')">5sec</button>
 					<p><button onclick="command('camera','TI','%0a')">10sec</button>
 					<p><button onclick="command('camera','TI','%1e')">30sec</button>
-					<p><button onclick="command('camera','TI','%3c')">60sec</button>&nbsp;
+					<p><button onclick="command('camera','TI','%3c')">60sec</button>
 					<p>Volume:
 					<p>
                     <p><button onclick="command('camera','BS','%00')">0%</button>
 					<p><button onclick="command('camera','BS','%01')">70%</button>
 					<p><button onclick="command('camera','BS','%02')">100%</button>
-					    <td>
+					    <p><button
                         <p>Continuous Shot (HERO3):
                     <p>
   <p><button onclick="command('camera','CS','%00')">Single</button>
@@ -160,17 +162,13 @@ body {
                   <p><p><button onclick="command('camera','BU','%03')">10/2s</button>
                   <p><p><button onclick="command('camera','BU','%04')">30/1s</button>
                   <p><p><button onclick="command('camera','BU','%05')">30/2s</button>
-                      <p><p><button onclick="command('camera','BU','%06')">30/3s</button>&nbsp;</td>
-				      </tr>
-					  <tr>
-					    <td>&nbsp;</td>
-					    <td>
-                        <p><a href="mailto:mail@chernowii.com?&subject=ChernowiiApp&body=Write here">Send suggestions, bugs, reports...</a>&nbsp;</td>
-					    <td>&nbsp;</td>
-				      </tr>
-				  </table>
-					<p>&nbsp; 
-                    <p><br/>
+                      <p><p><button onclick="command('camera','BU','%06')">30/3s</button>
+				      
+					  
+					    <p><button
+					    <p><button
+                        <p><a href="mailto:mail@chernowii.com?&subject=ChernowiiApp&body=Write here">Send suggestions, bugs, reports...</a>
+					   </big>
                                         
 </body>
 </html>
