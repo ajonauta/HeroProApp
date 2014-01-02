@@ -10,11 +10,11 @@ body {
 </style>
 </head>
 <head>
-		<title>GoPro WiFi bacpac WEB App</title>
+		
 		<script type='text/JavaScript'>
 			function getXhr(){
 				var xhr = null;
-				if(window.XMLHttpRequest) // Firefox et autres
+				if(window.XMLHttpRequest) // Firefox and others
 					xhr = new XMLHttpRequest();
 				else if(window.ActiveXObject){ // Internet Explorer
 					try {
@@ -23,7 +23,7 @@ body {
 						xhr = new ActiveXObject("Microsoft.XMLHTTP");
 					}
 				}
-				else { // XMLHttpRequest non support� par le navigateur
+				else { // XMLHttpRequest no supported
 					alert("Votre navigateur ne supporte pas les objets XMLHTTPRequest...");
 					xhr = false;
 				}
@@ -35,9 +35,9 @@ body {
 			*/
 			function command(device, app, command){
 				var xhr = getXhr()
-				// On d�fini ce qu'on va faire quand on aura la r�ponse
+				
 				xhr.onreadystatechange = function(){
-					// On ne fait quelque chose que si on a tout re�u et que le serveur est ok
+					
 					if(xhr.readyState == 4 && xhr.status == 200){
 						alert(xhr.responseText);
 					}
@@ -221,12 +221,12 @@ body {
 				      
                       <p>Delete files
                       
-                      &nbsp;<button onclick="command('camera','DL')">Last</button>
-                      &nbsp;<button onclick="command('camera','DA')">All</button>
+                     &nbsp;<button onclick="command('camera','DL')">Delete Last File</button>&nbsp;
+                    <button onclick="command('camera','DA')">Delete All </button>
                       
 					  
 					    
-                        <p><a href="mailto:mail@chernowii.com?&subject=ChernowiiApp&body=Write here">Send suggestions, bugs, reports...</a>
+                        <p><a href="mailto:mail@chernowii.com?&subject=HeroPro&body=Write here">Send suggestions, bugs, reports...</a>
 					   </big>
      
 </body>
