@@ -10,7 +10,26 @@ body {
 </style>
 </head>
 <head>
-		
+	<script type="text/javascript">
+    $(document).ready(function() {
+            document.onkeydown = function() 
+                {
+                    var j = event.keyIdentifier
+                    if (j == "R")
+                        window.location = recButton
+                    else if (j == "S")
+                        window.location = stopButton            
+                        }
+                   });
+
+      $(document).ready(function() {
+                    var recTrigger = $("#recordtrigger")
+                    var stopTrigger = $("#stoptrigger")
+                    recButton = recTrigger.attr("onclick")
+                    stopButton = stopTrigger.attr("onclick")
+                });
+
+</script>
 		<script type='text/JavaScript'>
 			function getXhr(){
 				var xhr = null;
@@ -59,11 +78,11 @@ body {
 				   </center>
 				 
                         <p><button onclick="command('bacpac','PW','%01')">Turn GoPro ON</button>
-                        &nbsp;<button onclick="command('bacpac','SH','%01')">Fire!</button>
+                        &nbsp;<button id="recordtrigger"  onclick="command('bacpac','SH','%01')">Fire!</button>
 
-                        &nbsp;<button onclick="command('bacpac','SH','%00')">Stop </button>
+                        &nbsp;<button id="stoptrigger" onclick="command('bacpac','SH','%00')">Stop </button>
 
-                  
+                     
                   
                       &nbsp;<button onclick="command('bacpac','PW','%00')">
                         Turn GoPro OFF
