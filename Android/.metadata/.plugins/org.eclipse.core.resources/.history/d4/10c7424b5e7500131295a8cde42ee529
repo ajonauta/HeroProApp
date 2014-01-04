@@ -1,0 +1,12 @@
+/*
+ * WebView.h
+ *
+ *  Created on: 04/01/2014
+ *      Author: isabel
+ */
+
+@interface ViewController : UIViewController {
+IBOutlet UIWebView *MyHTMLfile;
+}
+
+

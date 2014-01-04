@@ -21,6 +21,7 @@
 		9CAC33C2187831180099B2C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAC33A4187831170099B2C7 /* UIKit.framework */; };
 		9CAC33CA187831180099B2C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CAC33C8187831180099B2C7 /* InfoPlist.strings */; };
 		9CAC33CC187831180099B2C7 /* HeroProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC33CB187831180099B2C7 /* HeroProTests.m */; };
+		9CDBBB2B18787080009F0498 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBBB2A18787080009F0498 /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		9CAC33C7187831180099B2C7 /* HeroProTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeroProTests-Info.plist"; sourceTree = "<group>"; };
 		9CAC33C9187831180099B2C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9CAC33CB187831180099B2C7 /* HeroProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeroProTests.m; sourceTree = "<group>"; };
+		9CDBBB2A18787080009F0498 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = ../../HTML5App/Smartphone/index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				9CAC33C5187831180099B2C7 /* HeroProTests */,
 				9CAC339F187831170099B2C7 /* Frameworks */,
 				9CAC339E187831170099B2C7 /* Products */,
+				9CDBBB2A18787080009F0498 /* index.html */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CAC33B9187831180099B2C7 /* Images.xcassets in Resources */,
+				9CDBBB2B18787080009F0498 /* index.html in Resources */,
 				9CAC33AB187831170099B2C7 /* InfoPlist.strings in Resources */,
 				9CAC33B4187831180099B2C7 /* Main.storyboard in Resources */,
 			);
@@ -460,6 +464,7 @@
 				9CAC33D1187831180099B2C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CAC33D2187831180099B2C7 /* Build configuration list for PBXNativeTarget "HeroProTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +473,7 @@
 				9CAC33D4187831180099B2C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

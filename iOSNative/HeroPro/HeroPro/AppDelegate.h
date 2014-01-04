@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface ViewController : UIViewController {
+    IBOutlet UIWebView *MyHTMLfile;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
