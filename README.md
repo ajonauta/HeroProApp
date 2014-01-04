@@ -21,7 +21,7 @@ Contribute
 
 Please contribute of you know HTML5 or a Native language, or if you know more commands (see commands.md) or testing the app with your camera (bugs must be reported to [my mail](mailto:mail@chernowii.com?&subject=HeroPro App bug&body=Please include camera model, device and bug description.))
 
-Releases
----------
+Thanks
+-------
 
-In one week the first HTML5 build will be tested and ready to use
+Special thanks to [r1pper](http://github.com/r1pper)
