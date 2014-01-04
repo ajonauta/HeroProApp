@@ -20,7 +20,7 @@ As native is difficult to code and I dont have all the devices. Contribution is 
 Contribute
 -----------
 
-Please contribute of you know HTML5 or a Native language, or if you know more commands (see commands.md) or testing the app with your camera (bugs must be reported to [my mail](mailto:mail@chernowii.com?&subject=HeroPro App bug&body=Please include camera model, device and bug description.))
+Please contribute of you know HTML5 or a Native language, or if you know more commands (see commands.md) or testing the app with your camera (bugs must be reported to [my mail](mailto:mail@chernowii.com))
 
 Status
 ------
