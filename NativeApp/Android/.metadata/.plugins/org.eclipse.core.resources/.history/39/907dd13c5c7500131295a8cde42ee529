@@ -1,3 +1,0 @@
-@interface ViewController : UIViewController {
-IBOutlet UIWebView *MyHTMLfile;
-}
