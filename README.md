@@ -17,6 +17,19 @@ Native
 
 HTML5 app ported to native using PhoneGap, avaible all mobile platforms!
 
+WebApp
+------
+The WebApp is the index.html fie uploaded to a webpage.
+
+HOW TO USE THE WEBAPP
+
+* Connect to the internet
+* Go to the URL that is assigned to your device (see below)
+* Then connect to the GoPro wifi
+* Go back to the web browser
+* DONT REFRESH THE WEB BROWSER!
+* DONT FORGET TO WRITE YOUR GOPRO WIFI PASS IN THE APP
+
 Contribute
 -----------
 
