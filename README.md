@@ -7,6 +7,11 @@ You can choose either the HTML5 app or the native one
 
 HeroPro is based on [GoPro WIFI hack repo](https://github.com/KonradIT/goprowifihack)
 
+Cameras
+--------
+
+The app currently supports GoPro HERO2, GoPro HERO3 Black, GoPro HERO3 Silver: (same parameters as HERO2)
+
 HTML5
 ------
 
@@ -19,7 +24,7 @@ HTML5 app ported to native using PhoneGap, avaible all mobile platforms!
 
 WebApp
 ------
-The WebApp is the index.html fie uploaded to a webpage.
+The WebApp is the index.html file uploaded to a webpage.
 
 HOW TO USE THE WEBAPP
 
