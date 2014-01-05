@@ -3,14 +3,14 @@ HeroProApp
 
 HeroPro App, the Free OpenSource HTML5 / Native app to control, liveview and view content of GoPro HERO cameras.
 
-You can choose either the HTML5 app or the native one (on dev stage)
+You can choose either the HTML5 app or the native one 
 
 HeroPro is based on [GoPro WIFI hack repo](https://github.com/KonradIT/goprowifihack)
 
 HTML5
 ------
 
-An index.html is updated with the latest code. Releases will be anounced below.
+An index.html is updated with the latest code.
 
 Native
 -------
