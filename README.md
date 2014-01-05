@@ -15,7 +15,7 @@ An index.html is updated with the latest code. Releases will be anounced below.
 Native
 -------
 
-As native is difficult to code and I dont have all the devices. Contribution is appreciated.
+HTML5 app ported to native using PhoneGap, avaible all mobile platforms!
 
 Contribute
 -----------
