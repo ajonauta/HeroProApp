@@ -30,6 +30,14 @@ HOW TO USE THE WEBAPP
 * DONT REFRESH THE WEB BROWSER!
 * DONT FORGET TO WRITE YOUR GOPRO WIFI PASS IN THE APP
 
+URLs
+----
+
+Computer (MacOSX, Windows and Linux): http://pc.heropro.chernowii.com
+
+Mobile (iOS, Android, WP8, Firefox OS, Blackberry OS): http://m.heropro.chernowii.com
+
+
 Contribute
 -----------
 
