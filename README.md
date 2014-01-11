@@ -1,6 +1,8 @@
 HeroProApp
 ==========
 
+![Octocat.GoPro.HERO](octocathero.jpg)
+
 HeroPro App, the Free OpenSource HTML5 / Native app to control, liveview and view content of GoPro HERO cameras.
 
 You can choose either the HTML5 app or the native one 
