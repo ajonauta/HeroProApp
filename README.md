@@ -22,7 +22,7 @@ An index.html is updated with the latest code.
 Native
 -------
 
-HTML5 app ported to native using PhoneGap, avaible all mobile platforms!
+HTML5 app ported to native using PhoneGap, avaible all mobile platforms! https://build.phonegap.com/apps/721376/share
 
 WebApp
 ------
