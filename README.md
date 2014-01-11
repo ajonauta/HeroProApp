@@ -1,7 +1,11 @@
 HeroProApp
 ==========
 
+<<<<<<< HEAD
 ![Octocat.GoPro.HERO](octocatherosmall.jpg)
+=======
+![Octocat.GoPro.HERO](Octocats/octocatherosmall.jpg)
+>>>>>>> 38fce515a640036ff95301bac38bd8efc0d275f5
 
 HeroPro App, the Free OpenSource HTML5 / Native app to control, liveview and view content of GoPro HERO cameras.
 
@@ -22,7 +26,7 @@ An index.html is updated with the latest code.
 Native
 -------
 
-HTML5 app ported to native using PhoneGap, avaible all mobile platforms!
+HTML5 app ported to native using PhoneGap, avaible all mobile platforms! https://build.phonegap.com/apps/721376/share
 
 WebApp
 ------
