@@ -24,6 +24,13 @@ Native
 
 HTML5 app ported to native using PhoneGap, avaible all mobile platforms! https://build.phonegap.com/apps/721376/share
 
+Server
+------
+
+Download the index file you want, copy it to the root of the SD (where DCIM and MISC are), name it heropro.html
+
+Then go to 10.5.5.9:8080/videos/heropro.html
+
 WebApp
 ------
 The WebApp is the index.html file uploaded to a webpage.
