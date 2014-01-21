@@ -65,4 +65,4 @@ Follow #heropro on twitter and instagram
 Thanks
 -------
 
-Special thanks to [r1pper](http://github.com/r1pper)
+Special thanks to [r1pper](http://github.com/r1pper) and [sprhawk](http://github.com/sprhawk)
