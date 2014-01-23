@@ -60,7 +60,7 @@ Please contribute of you know HTML5 or a Native language, or if you know more co
 Donate
 ------
 
-Donate [Eur]() or [Usd]()
+Donate [Eur](https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=xzvRRl1F77J6j1KZ6rDfWOFg1FGXikvhFAOZsvyuYEvRwrcKHF2OSnrh-iK&dispatch=5885d80a13c0db1f8e263663d3faee8def8934b92a630e40b7fef61ab7e9fe63) or [Usd]()
 
 Status
 ------
