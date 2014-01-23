@@ -57,6 +57,38 @@ Contribute
 
 Please contribute of you know HTML5 or a Native language, or if you know more commands (see commands.md) or testing the app with your camera (bugs must be reported to [my mail](mailto:mail@chernowii.com))
 
+Donate
+------
+
+Donate here:
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" 
+target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="2ZZTM9D3JHXYY">
+<input type="image" 
+src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" 
+border="0" name="submit" alt="PayPal - The safer, easier way to pay 
+online!">
+<img alt="" border="0" 
+src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" 
+height="1">
+</form>
+<p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" 
+target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="MFB4TNZELD2GY">
+<input type="image" 
+src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" 
+border="0" name="submit" alt="PayPal - The safer, easier way to pay 
+online!">
+<img alt="" border="0" 
+src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" 
+height="1">
+</form>
+
+
 Status
 ------
 
