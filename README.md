@@ -1,13 +1,15 @@
 HeroProApp
 ==========
 
-![Octocat.GoPro.HERO](Octocats/octocatherosmall.jpg)
+![HeroProApp.GoPro.HERO](images/heroproapplogo-tilelarge.png)
 
 HeroPro App, the Free OpenSource HTML5 / Native app to control, liveview and view content of GoPro HERO cameras.
 
 You can choose either the HTML5 app or the native one 
 
 HeroPro is based on [GoPro WIFI hack repo](https://github.com/KonradIT/goprowifihack)
+
+![HeroProApp.GoPro.HERO](images/heroproapplogo-squared.png)
 
 Cameras
 --------
@@ -23,6 +25,8 @@ Native
 -------
 
 HTML5 app ported to native using PhoneGap, avaible all mobile platforms! https://build.phonegap.com/apps/721376/share
+
+And also specifically builded for Windows Phone. (See WindowsPhone folder)
 
 Server
 ------

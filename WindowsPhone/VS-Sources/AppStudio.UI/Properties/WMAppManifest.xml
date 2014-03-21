@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en-US"/>
+  <App xmlns="" ProductID="{c8216f99-3f32-4bf6-8137-951f5398d815}" Title="HeroProApp" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="Windows Phone AppStudio" Description="Control, View, Share. And code!
+HeroProApp, the 100% Free, OpenSource, GitHub-based HTML5 App to control GoPro Cameras.
+For HERO2 w/ Wifi BacPac, HERO3 Silver, HERO3 Black, HERO3+Black.
+Make sure you have 3G &amp; the GoPro Wifi is connected to the phone." Publisher="Windows Phone AppStudio" PublisherID="{3b79972a-6fed-4afb-8c27-fca9e29933c1}">
+    <IconPath IsRelative="true" IsResource="false">Assets/Tiles/goprotrasparente.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_SENSORS" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+      <Capability Name="ID_CAP_SPEECH_RECOGNITION" />
+      <Capability Name="ID_CAP_PHONEDIALER" />
+      <Capability Name="ID_CAP_LOCATION" />
+      <Capability Name="ID_CAP_PROXIMITY" />
+      <Capability Name="ID_CAP_IDENTITY_USER" />
+      <Capability Name="ID_CAP_MAP" />
+      <Capability Name="ID_CAP_MEDIALIB_PHOTO" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask  Name ="_default" NavigationPage="Views/MainPage.xaml" ActivationPolicy="Resume"/>
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="AppStudio.UIToken" TaskName="_default">
+        <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets/Tiles/heroproapplogo-squared.png</SmallImageURI>
+          <Count></Count>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Assets/Tiles/heroproapplogo-squared-1.png</BackgroundImageURI>
+          <Title>HeroProApp</Title>
+          <BackContent>GoPro, be a HERO!</BackContent>
+          <BackBackgroundImageURI>Assets/Tiles/heroproapplogo-tilelarge-1.png</BackBackgroundImageURI>
+          <BackTitle></BackTitle>
+          <LargeBackgroundImageURI IsRelative="true" IsResource="false">Assets/Tiles/heroproapplogo-squared-1.png</LargeBackgroundImageURI>
+          <LargeBackContent></LargeBackContent>
+          <LargeBackBackgroundImageURI IsRelative="true" IsResource="false">Assets/Tiles/heroproapplogo-tilelarge-1.png</LargeBackBackgroundImageURI>
+          <DeviceLockImageURI IsRelative="true" IsResource="false"/>
+          <HasLarge>True</HasLarge>
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <Extensions>
+      <Extension ExtensionName="LockScreen_Notification_IconCount" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+      <Extension ExtensionName="LockScreen_Notification_TextField" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+      <Extension ExtensionName="LockScreen_Background" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+    </Extensions>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA"/>
+      <ScreenResolution Name="ID_RESOLUTION_WXGA"/>
+      <ScreenResolution Name="ID_RESOLUTION_HD720P"/>
+    </ScreenResolutions>
+  </App>
+</Deployment>
