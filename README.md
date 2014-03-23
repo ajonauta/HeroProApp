@@ -14,7 +14,7 @@ HeroPro is based on [GoPro WIFI hack repo](https://github.com/KonradIT/goprowifi
 Cameras
 --------
 
-The app currently supports GoPro HERO2, GoPro HERO3 Black, GoPro HERO3 Silver: (same parameters as HERO2)
+The app currently supports GoPro HERO2, GoPro HERO3 Black, GoPro HERO3 Silver, GoPro HERO3+ Black
 
 HTML5
 ------
@@ -24,9 +24,7 @@ An index.html is updated with the latest code.
 Native
 -------
 
-HTML5 app ported to native using PhoneGap, avaible all mobile platforms! https://build.phonegap.com/apps/721376/share
-
-And also specifically builded for Windows Phone. (See WindowsPhone folder)
+At the moment, only HeroProApp for WP8 Native is available
 
 Server
 ------
