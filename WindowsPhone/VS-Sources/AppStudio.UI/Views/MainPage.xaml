@@ -39,6 +39,10 @@
       <phone:Panorama Name="Container" Grid.Row="0" ItemsSource="{Binding}" SelectionChanged="OnSelectionChanged" toolkit:TiltEffect.IsTiltEnabled="True"
                       Background="{StaticResource AppBackground}" TitleTemplate="{StaticResource AppPanoramaTitle}">
           <phone:PanoramaItem Name="AppViewItem" HeaderTemplate="{StaticResource AppViewHeader}" Content="{Binding AppViewModel}" ContentTemplate="{StaticResource AppViewContent}"/>
+          <phone:PanoramaItem Name="GoProVODViewItem" HeaderTemplate="{StaticResource GoProVODViewHeader}" Content="{Binding GoProVODViewModel}" ContentTemplate="{StaticResource GoProVODViewContent}"/>
+          <phone:PanoramaItem Name="GPTipsTricksViewItem" HeaderTemplate="{StaticResource GPTipsTricksViewHeader}" Content="{Binding GPTipsTricksViewModel}" ContentTemplate="{StaticResource GPTipsTricksViewContent}"/>
+          <phone:PanoramaItem Name="GoProPhotosViewItem" HeaderTemplate="{StaticResource GoProPhotosViewHeader}" Content="{Binding GoProPhotosViewModel}" ContentTemplate="{StaticResource GoProPhotosViewContent}"/>
+          <phone:PanoramaItem Name="GoProLinksViewItem" HeaderTemplate="{StaticResource GoProLinksViewHeader}" Content="{Binding GoProLinksViewModel}" ContentTemplate="{StaticResource GoProLinksViewContent}"/>
           <phone:PanoramaItem Name="AboutViewItem" HeaderTemplate="{StaticResource AboutViewHeader}" Content="{Binding AboutViewModel}" ContentTemplate="{StaticResource AboutViewContent}"/>
       </phone:Panorama>
 

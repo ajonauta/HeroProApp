@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US"/>
-  <App xmlns="" ProductID="{c8216f99-3f32-4bf6-8137-951f5398d815}" Title="HeroProApp" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="Windows Phone AppStudio" Description="Control, View, Share. And code!
+  <App xmlns="" ProductID="{c8216f99-3f32-4bf6-8137-951f5398d815}" Title="HeroProApp" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="Windows Phone AppStudio" Description="Control, View, Share, Enjoy!
+
 HeroProApp, the 100% Free, OpenSource, GitHub-based HTML5 App to control GoPro Cameras.
+
 For HERO2 w/ Wifi BacPac, HERO3 Silver, HERO3 Black, HERO3+Black.
-Make sure you have 3G &amp; the GoPro Wifi is connected to the phone." Publisher="Windows Phone AppStudio" PublisherID="{3b79972a-6fed-4afb-8c27-fca9e29933c1}">
-    <IconPath IsRelative="true" IsResource="false">Assets/Tiles/goprotrasparente.png</IconPath>
+
+Make sure you have 3G &amp; the GoPro Wifi is connected to the phone." Publisher="Windows Phone AppStudio" PublisherID="{339a9378-4184-41d9-9f47-2c22b70aae84}">
+    <IconPath IsRelative="true" IsResource="false">Assets/Tiles/heroproapplogo-squared-app.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_SENSORS" />

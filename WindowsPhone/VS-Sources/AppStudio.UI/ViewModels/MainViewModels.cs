@@ -9,6 +9,10 @@ namespace AppStudio
     public class MainViewModels : BindableBase
     {
        private AppViewModel _appViewModel;
+       private GoProVODViewModel _goProVODViewModel;
+       private GPTipsTricksViewModel _gPTipsTricksViewModel;
+       private GoProPhotosViewModel _goProPhotosViewModel;
+       private GoProLinksViewModel _goProLinksViewModel;
        private AboutViewModel _aboutViewModel;
 
         private ViewModelBase _selectedItem = null;
@@ -23,6 +27,26 @@ namespace AppStudio
             get { return _appViewModel ?? (_appViewModel = new AppViewModel()); }
         }
  
+        public GoProVODViewModel GoProVODViewModel
+        {
+            get { return _goProVODViewModel ?? (_goProVODViewModel = new GoProVODViewModel()); }
+        }
+ 
+        public GPTipsTricksViewModel GPTipsTricksViewModel
+        {
+            get { return _gPTipsTricksViewModel ?? (_gPTipsTricksViewModel = new GPTipsTricksViewModel()); }
+        }
+ 
+        public GoProPhotosViewModel GoProPhotosViewModel
+        {
+            get { return _goProPhotosViewModel ?? (_goProPhotosViewModel = new GoProPhotosViewModel()); }
+        }
+ 
+        public GoProLinksViewModel GoProLinksViewModel
+        {
+            get { return _goProLinksViewModel ?? (_goProLinksViewModel = new GoProLinksViewModel()); }
+        }
+ 
         public AboutViewModel AboutViewModel
         {
             get { return _aboutViewModel ?? (_aboutViewModel = new AboutViewModel()); }
@@ -31,6 +55,10 @@ namespace AppStudio
         public void SetViewType(ViewTypes viewType)
         {
             AppViewModel.ViewType = viewType;
+            GoProVODViewModel.ViewType = viewType;
+            GPTipsTricksViewModel.ViewType = viewType;
+            GoProPhotosViewModel.ViewType = viewType;
+            GoProLinksViewModel.ViewType = viewType;
             AboutViewModel.ViewType = viewType;
         }
 
@@ -81,6 +109,10 @@ namespace AppStudio
             var loadTasks = new Task[]
             { 
                 AppViewModel.LoadItems(isNetworkAvailable),
+                GoProVODViewModel.LoadItems(isNetworkAvailable),
+                GPTipsTricksViewModel.LoadItems(isNetworkAvailable),
+                GoProPhotosViewModel.LoadItems(isNetworkAvailable),
+                GoProLinksViewModel.LoadItems(isNetworkAvailable),
                 AboutViewModel.LoadItems(isNetworkAvailable),
             };
             await Task.WhenAll(loadTasks);

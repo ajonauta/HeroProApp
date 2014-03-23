@@ -10,9 +10,10 @@ namespace AppStudio.Data
         {
             new HtmlSchema
             {
-                Id = "{948890f1-ef35-4be9-9654-7ded1954f82c}",
-                Content = "3G must be ON and GoPro Wifi must be connected to phone.\n<embed src=\"http://m.her" +
-    "opro.chernowii.com\" width=\"100%\" height=\"100%\">"
+                Id = "{f1f591ca-97be-42f6-bbe0-3d65f510ed4c}",
+                Content = "Make sure you are connected to the GoPro Wifi and you have 3G/4G\nHeroProApp works" +
+    " on the browser.\n<br><br><a rel=\"nofollow\" target=\"_blank\" style=\"color:red\" hre" +
+    "f=\"http://m.heropro.chernowii.com\"><big>Go to HeroProApp in Browser</big></a>"
             }
         };
 

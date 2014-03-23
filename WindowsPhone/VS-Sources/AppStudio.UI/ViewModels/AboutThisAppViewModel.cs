@@ -36,9 +36,9 @@ namespace AppStudio.Data
         {
             get
             {
-                return "Control, View, Share. And code!\nHeroProApp, the 100% Free, OpenSource, GitHub-bas" +
-    "ed HTML5 App to control GoPro Cameras.\nFor HERO2 w/ Wifi BacPac, HERO3 Silver, H" +
-    "ERO3 Black, HERO3+Black.\nMake sure you have 3G & the GoPro Wifi is connected to " +
+                return "Control, View, Share, Enjoy!\n\nHeroProApp, the 100% Free, OpenSource, GitHub-based" +
+    " HTML5 App to control GoPro Cameras.\n\nFor HERO2 w/ Wifi BacPac, HERO3 Silver, HE" +
+    "RO3 Black, HERO3+Black.\n\nMake sure you have 3G & the GoPro Wifi is connected to " +
     "the phone.";
             }
         }
@@ -66,7 +66,7 @@ namespace AppStudio.Data
             {
                 return new RelayCommand<string>((src) =>
                 {
-                   string appUri = String.Format("http://xap.winappstudio.com/Job/GetXap?ticket={0}", "79246.goydnt");
+                   string appUri = String.Format("http://xap.winappstudio.com/Job/GetXap?ticket={0}", "79246.euntic");
                     App.RootFrame.Dispatcher.BeginInvoke(async () =>
                     {
                         if (await _shareService.AppExistInMarketPlace())

@@ -14,7 +14,12 @@
                 <ResourceDictionary Source="Styles/AppStyles.xaml"/>
                 <ResourceDictionary Source="Styles/ButtonStyles.xaml"/>
                 <ResourceDictionary Source="Views/DataTemplates/AppView.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/GoProVODView.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/GPTipsTricksView.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/GoProPhotosView.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/GoProLinksView.xaml"/>
                 <ResourceDictionary Source="Views/DataTemplates/AboutView.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/GoProPhotosViewDetail.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
             <sys:String x:Key="AppName">HeroProApp</sys:String>

@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{31f2f869-73c4-4ed0-b9f5-c0cdb0391e8f}</ProjectGuid>
+    <ProjectGuid>{418c4f9c-a84a-41d2-b79f-4e2a2993acb3}</ProjectGuid>
     <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -107,6 +107,10 @@
     <Compile Include="DataSchemas\RssSchema.cs" />
     <Compile Include="DataSchemas\YouTubeSchema.cs" />
     <Compile Include="DataSources\AppDataSource.cs" />
+    <Compile Include="DataSources\GoProVODDataSource.cs" />
+    <Compile Include="DataSources\GPTipsTricksDataSource.cs" />
+    <Compile Include="DataSources\GoProPhotosDataSource.cs" />
+    <Compile Include="DataSources\GoProLinksDataSource.cs" />
     <Compile Include="DataSources\AboutDataSource.cs" />
   </ItemGroup>
   <ItemGroup>
