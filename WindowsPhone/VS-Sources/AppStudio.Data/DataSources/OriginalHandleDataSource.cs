@@ -4,16 +4,16 @@ using System.Threading.Tasks;
 
 namespace AppStudio.Data
 {
-    public class AppDataSource : IDataSource<HtmlSchema>
+    public class OriginalHandleDataSource : IDataSource<HtmlSchema>
     {
         private IEnumerable<HtmlSchema> _data = new HtmlSchema[]
         {
             new HtmlSchema
             {
-                Id = "{2c8dda1c-8787-483c-9973-10004734cd19}",
-                Content = @"Make sure you are connected to the GoPro Wifi and you have 3G/4G
-<br><br>HeroProApp works on the browser.
-<br><br><a rel=""nofollow"" target=""_blank"" href=""http://m.heropro.chernowii.com""><span class=""wysiwyg-font-size-larger"">Go to HeroProApp in Browser</span></a>"
+                Id = "{18d78e78-ba52-4aae-9a0f-50dcb2d64e7a}",
+                Content = "Do you skate? Do you like gopro\'s skate videos, where there are low angle&nbsp;sm" +
+    "ooth shots of the skater. They use this mount, the Original Handle.<br><br><a hr" +
+    "ef=\"http://originalhandle.com\">OriginalHandle.com\"</a>"
             }
         };
 

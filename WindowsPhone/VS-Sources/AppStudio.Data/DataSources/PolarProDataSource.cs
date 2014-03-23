@@ -4,16 +4,16 @@ using System.Threading.Tasks;
 
 namespace AppStudio.Data
 {
-    public class AppDataSource : IDataSource<HtmlSchema>
+    public class PolarProDataSource : IDataSource<HtmlSchema>
     {
         private IEnumerable<HtmlSchema> _data = new HtmlSchema[]
         {
             new HtmlSchema
             {
-                Id = "{2c8dda1c-8787-483c-9973-10004734cd19}",
-                Content = @"Make sure you are connected to the GoPro Wifi and you have 3G/4G
-<br><br>HeroProApp works on the browser.
-<br><br><a rel=""nofollow"" target=""_blank"" href=""http://m.heropro.chernowii.com""><span class=""wysiwyg-font-size-larger"">Go to HeroProApp in Browser</span></a>"
+                Id = "{21ce59bb-3fc8-4c70-8e6f-5b9361486317}",
+                Content = "PolarPro offers a variety of lenses for the GoPro camera, from magenta to ND. It " +
+    "will apply a pro look to your footage.&nbsp;<br><br><a href=\"http://polarpro.com" +
+    "\">PolarPro.com</a>"
             }
         };
 

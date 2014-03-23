@@ -4,16 +4,15 @@ using System.Threading.Tasks;
 
 namespace AppStudio.Data
 {
-    public class AppDataSource : IDataSource<HtmlSchema>
+    public class GoPoleDataSource : IDataSource<HtmlSchema>
     {
         private IEnumerable<HtmlSchema> _data = new HtmlSchema[]
         {
             new HtmlSchema
             {
-                Id = "{2c8dda1c-8787-483c-9973-10004734cd19}",
-                Content = @"Make sure you are connected to the GoPro Wifi and you have 3G/4G
-<br><br>HeroProApp works on the browser.
-<br><br><a rel=""nofollow"" target=""_blank"" href=""http://m.heropro.chernowii.com""><span class=""wysiwyg-font-size-larger"">Go to HeroProApp in Browser</span></a>"
+                Id = "{854fd83a-7055-4eb6-ba0d-f55b976589fc}",
+                Content = "The GoPole allows you to capture yourself jumping that massive cliff or hitting t" +
+    "he slopes<br><br><br><a href=\"http://gopole.com\" target=\"_blank\">GoPole.com</a>"
             }
         };
 

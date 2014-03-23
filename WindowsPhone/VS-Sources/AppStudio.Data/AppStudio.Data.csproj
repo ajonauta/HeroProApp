@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{418c4f9c-a84a-41d2-b79f-4e2a2993acb3}</ProjectGuid>
+    <ProjectGuid>{a8bdf599-9151-4c26-954e-2b2a1afaea9a}</ProjectGuid>
     <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -110,7 +110,13 @@
     <Compile Include="DataSources\GoProVODDataSource.cs" />
     <Compile Include="DataSources\GPTipsTricksDataSource.cs" />
     <Compile Include="DataSources\GoProPhotosDataSource.cs" />
-    <Compile Include="DataSources\GoProLinksDataSource.cs" />
+    <Compile Include="DataSources\GoProMountsDataSource.cs" />
+    <Compile Include="DataSources\BRLSMountDataSource.cs" />
+    <Compile Include="DataSources\GoPoleDataSource.cs" />
+    <Compile Include="DataSources\RollPro3DataSource.cs" />
+    <Compile Include="DataSources\GoFlexArmDataSource.cs" />
+    <Compile Include="DataSources\PolarProDataSource.cs" />
+    <Compile Include="DataSources\OriginalHandleDataSource.cs" />
     <Compile Include="DataSources\AboutDataSource.cs" />
   </ItemGroup>
   <ItemGroup>

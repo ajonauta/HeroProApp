@@ -4,16 +4,16 @@ using System.Threading.Tasks;
 
 namespace AppStudio.Data
 {
-    public class AppDataSource : IDataSource<HtmlSchema>
+    public class BRLSMountDataSource : IDataSource<HtmlSchema>
     {
         private IEnumerable<HtmlSchema> _data = new HtmlSchema[]
         {
             new HtmlSchema
             {
-                Id = "{2c8dda1c-8787-483c-9973-10004734cd19}",
-                Content = @"Make sure you are connected to the GoPro Wifi and you have 3G/4G
-<br><br>HeroProApp works on the browser.
-<br><br><a rel=""nofollow"" target=""_blank"" href=""http://m.heropro.chernowii.com""><span class=""wysiwyg-font-size-larger"">Go to HeroProApp in Browser</span></a>"
+                Id = "{55bfce2a-67c7-4ba6-b4d2-0d0f602dbbb2}",
+                Content = "The BRLS mount is a suction cup that allows users to mount it on cars and surfboa" +
+    "rds<br><br><br><a rel=\"nofollow\" target=\"_blank\" href=\"http://brlshawaii.com\">br" +
+    "lshawaii.com</a>"
             }
         };
 

@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{fdfbd870-b602-4efd-a1c0-7cda187b9ec2}</ProjectGuid>
+    <ProjectGuid>{37ae04d3-1e7c-4146-804b-a2d7ef070135}</ProjectGuid>
     <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -105,9 +105,17 @@
     <Content Include="Views\DataTemplates\GoProVODView.xaml" />
     <Content Include="Views\DataTemplates\GPTipsTricksView.xaml" />
     <Content Include="Views\DataTemplates\GoProPhotosView.xaml" />
-    <Content Include="Views\DataTemplates\GoProLinksView.xaml" />
+    <Content Include="Views\DataTemplates\GoProMountsView.xaml" />
     <Content Include="Views\DataTemplates\AboutView.xaml" />
+    <Content Include="Views\DataTemplates\DetailView.xaml" />
+    <Content Include="Views\DataTemplates\DetailView1.xaml" />
     <Content Include="Views\DataTemplates\GoProPhotosViewDetail.xaml" />
+    <Content Include="Views\DataTemplates\BRLSMountView.xaml" />
+    <Content Include="Views\DataTemplates\GoPoleView.xaml" />
+    <Content Include="Views\DataTemplates\RollPro3View.xaml" />
+    <Content Include="Views\DataTemplates\GoFlexArmView.xaml" />
+    <Content Include="Views\DataTemplates\PolarProView.xaml" />
+    <Content Include="Views\DataTemplates\OriginalHandleView.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Icons\Dark\GoToSource.png" />
@@ -130,6 +138,12 @@
     <Content Include="Assets\Tiles\heroproapplogo-tilelarge-1.png" />
     <Content Include="Assets\LockScreenImage.jpg" />
     <Content Include="Assets\DataImages\heroproapplogo-squared-app.png" />
+    <Content Include="Assets\DataImages\brls.png" />
+    <Content Include="Assets\DataImages\gopole.png" />
+    <Content Include="Assets\DataImages\rollpro.png" />
+    <Content Include="Assets\DataImages\goflexarm.png" />
+    <Content Include="Assets\DataImages\polarpro.png" />
+    <Content Include="Assets\DataImages\originalhandle.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -157,8 +171,14 @@
     <Compile Include="ViewModels\GoProVODViewModel.cs" />
     <Compile Include="ViewModels\GPTipsTricksViewModel.cs" />
     <Compile Include="ViewModels\GoProPhotosViewModel.cs" />
-    <Compile Include="ViewModels\GoProLinksViewModel.cs" />
+    <Compile Include="ViewModels\GoProMountsViewModel.cs" />
     <Compile Include="ViewModels\AboutViewModel.cs" />
+    <Compile Include="ViewModels\BRLSMountViewModel.cs" />
+    <Compile Include="ViewModels\GoPoleViewModel.cs" />
+    <Compile Include="ViewModels\RollPro3ViewModel.cs" />
+    <Compile Include="ViewModels\GoFlexArmViewModel.cs" />
+    <Compile Include="ViewModels\PolarProViewModel.cs" />
+    <Compile Include="ViewModels\OriginalHandleViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Views\AboutThisAppPage.xaml.cs">
@@ -169,6 +189,30 @@
     </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BRLSMountView.xaml.cs">
+      <DependentUpon>BRLSMountView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GoPoleView.xaml.cs">
+      <DependentUpon>GoPoleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RollPro3View.xaml.cs">
+      <DependentUpon>RollPro3View.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GoFlexArmView.xaml.cs">
+      <DependentUpon>GoFlexArmView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PolarProView.xaml.cs">
+      <DependentUpon>PolarProView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OriginalHandleView.xaml.cs">
+      <DependentUpon>OriginalHandleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DetailView.xaml.cs">
+      <DependentUpon>DetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DetailView1.xaml.cs">
+      <DependentUpon>DetailView1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\GoProPhotosViewDetail.xaml.cs">
       <DependentUpon>GoProPhotosViewDetail.xaml</DependentUpon>
@@ -188,6 +232,38 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\BRLSMountView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GoPoleView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RollPro3View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GoFlexArmView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PolarProView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OriginalHandleView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DetailView1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -248,7 +324,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppStudio.Data\AppStudio.Data.csproj">
-      <Project>{418c4f9c-a84a-41d2-b79f-4e2a2993acb3}</Project>
+      <Project>{a8bdf599-9151-4c26-954e-2b2a1afaea9a}</Project>
       <Name>AppStudio.Data</Name>
     </ProjectReference>
   </ItemGroup>

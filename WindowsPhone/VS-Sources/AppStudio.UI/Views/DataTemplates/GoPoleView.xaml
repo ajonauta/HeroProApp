@@ -3,13 +3,13 @@
     xmlns:mytoolkit="clr-namespace:MyToolkit.Controls;assembly=MyToolkit.Extended"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <DataTemplate x:Name="GoProLinksViewHeader">
+    <DataTemplate x:Name="GoPoleViewHeader">
         <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
-            <TextBlock Text="GoPro Links" FontSize="56" Foreground="{StaticResource AppForegroundColor}"/>
+            <TextBlock Text="GoPole" FontSize="56" Foreground="{StaticResource AppForegroundColor}"/>
         </StackPanel>
     </DataTemplate>
 
-    <DataTemplate x:Name="GoProLinksViewContent">
+    <DataTemplate x:Name="GoPoleViewContent">
         <Grid Margin="5" DataContext="{Binding Items[0]}">
             <mytoolkit:HtmlTextBlock Margin="10,0" Html="{Binding Content}" FontSize="26" Foreground="{StaticResource AppForegroundColor}"/>
         </Grid>

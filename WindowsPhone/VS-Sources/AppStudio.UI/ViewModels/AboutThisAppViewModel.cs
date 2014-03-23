@@ -66,7 +66,7 @@ namespace AppStudio.Data
             {
                 return new RelayCommand<string>((src) =>
                 {
-                   string appUri = String.Format("http://xap.winappstudio.com/Job/GetXap?ticket={0}", "79246.euntic");
+                   string appUri = String.Format("http://xap.winappstudio.com/Job/GetXap?ticket={0}", "79246.sfdrqu");
                     App.RootFrame.Dispatcher.BeginInvoke(async () =>
                     {
                         if (await _shareService.AppExistInMarketPlace())

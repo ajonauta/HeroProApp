@@ -10,11 +10,10 @@ namespace AppStudio.Data
         {
             new HtmlSchema
             {
-                Id = "{1f299339-4ede-4a6d-a770-bea787885b36}",
-                Content = @"HeroProApp has been developed by Konrad Iturbe
-<p><a rel=""nofollow"" target=""_blank"" href=""http://chernowii.com"">Visit website</a></p>
-<p><a href=""mail@chernowii.com"">Mail me</a></p>
-<p><a rel=""nofollow"" target=""_blank"" href=""http://github.com/konradit/heroproapp"">View GitHub repo of HeroProApp</a></p>"
+                Id = "{e410c44e-ed8e-49f3-9a10-18a81d494d89}",
+                Content = @"HeroProApp is developed by Konrad Iturbe<br><br><br><a rel=""nofollow"" target=""_blank"" href=""http://chernowii.com"">Go to Konrad's website</a>
+
+<br><br><p>This app is Open Source! <a rel=""nofollow"" target=""_blank"" href=""http://github.com/konradit/heroproapp"">Github repo</a></p>"
             }
         };
 

@@ -7,7 +7,7 @@ HeroProApp, the 100% Free, OpenSource, GitHub-based HTML5 App to control GoPro C
 
 For HERO2 w/ Wifi BacPac, HERO3 Silver, HERO3 Black, HERO3+Black.
 
-Make sure you have 3G &amp; the GoPro Wifi is connected to the phone." Publisher="Windows Phone AppStudio" PublisherID="{339a9378-4184-41d9-9f47-2c22b70aae84}">
+Make sure you have 3G &amp; the GoPro Wifi is connected to the phone." Publisher="Windows Phone AppStudio" PublisherID="{4dd89026-765a-49e3-857f-49da181168eb}">
     <IconPath IsRelative="true" IsResource="false">Assets/Tiles/heroproapplogo-squared-app.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />

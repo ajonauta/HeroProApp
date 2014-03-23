@@ -6,16 +6,16 @@ using AppStudio.Services;
 
 namespace AppStudio.Data
 {
-    public class GoProLinksViewModel : ViewModelBase<HtmlSchema>
+    public class GoPoleViewModel : ViewModelBase<HtmlSchema>
     {
         override protected string CacheKey
         {
-            get { return "GoProLinksDataSource"; }
+            get { return "GoPoleDataSource"; }
         }
 
         override protected IDataSource<HtmlSchema> CreateDataSource()
         {
-            return new GoProLinksDataSource(); // HtmlDataSource
+            return new GoPoleDataSource(); // HtmlDataSource
         }
 
         override public bool IsStaticData

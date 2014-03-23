@@ -45,5 +45,10 @@ namespace AppStudio.Data
                 });
             }
         }
+
+        override protected void NavigateToSelectedItem()
+        {
+            NavigationServices.NavigateToPage("DetailView1");
+        }
     }
 }

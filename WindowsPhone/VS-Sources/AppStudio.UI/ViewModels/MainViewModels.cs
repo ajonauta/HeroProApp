@@ -12,7 +12,7 @@ namespace AppStudio
        private GoProVODViewModel _goProVODViewModel;
        private GPTipsTricksViewModel _gPTipsTricksViewModel;
        private GoProPhotosViewModel _goProPhotosViewModel;
-       private GoProLinksViewModel _goProLinksViewModel;
+       private GoProMountsViewModel _goProMountsViewModel;
        private AboutViewModel _aboutViewModel;
 
         private ViewModelBase _selectedItem = null;
@@ -42,9 +42,9 @@ namespace AppStudio
             get { return _goProPhotosViewModel ?? (_goProPhotosViewModel = new GoProPhotosViewModel()); }
         }
  
-        public GoProLinksViewModel GoProLinksViewModel
+        public GoProMountsViewModel GoProMountsViewModel
         {
-            get { return _goProLinksViewModel ?? (_goProLinksViewModel = new GoProLinksViewModel()); }
+            get { return _goProMountsViewModel ?? (_goProMountsViewModel = new GoProMountsViewModel()); }
         }
  
         public AboutViewModel AboutViewModel
@@ -58,7 +58,7 @@ namespace AppStudio
             GoProVODViewModel.ViewType = viewType;
             GPTipsTricksViewModel.ViewType = viewType;
             GoProPhotosViewModel.ViewType = viewType;
-            GoProLinksViewModel.ViewType = viewType;
+            GoProMountsViewModel.ViewType = viewType;
             AboutViewModel.ViewType = viewType;
         }
 
@@ -112,7 +112,7 @@ namespace AppStudio
                 GoProVODViewModel.LoadItems(isNetworkAvailable),
                 GPTipsTricksViewModel.LoadItems(isNetworkAvailable),
                 GoProPhotosViewModel.LoadItems(isNetworkAvailable),
-                GoProLinksViewModel.LoadItems(isNetworkAvailable),
+                GoProMountsViewModel.LoadItems(isNetworkAvailable),
                 AboutViewModel.LoadItems(isNetworkAvailable),
             };
             await Task.WhenAll(loadTasks);
