@@ -1,7 +1,6 @@
 #Windows Phone
 
-To install the certificate and the app: http://bit.ly/NGTSdr <--- Visit that URL in a Windows Phone 8 device to download instantly tha app + certificate
+To install the app: http://bit.ly/1iuVX7C <--- Visit that URL in a Windows Phone 8 device to download instantly the app.
 
 Only for Windows Phone devices.
 
-The .xap file provided here does not work without a certificate!
