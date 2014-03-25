@@ -18,6 +18,26 @@ namespace AppStudio.Data
             return new GoProPhotosDataSource(); // FlickrDataSource
         }
 
+        override public bool IsPinToStartVisible
+        {
+            get { return ViewType == ViewTypes.Detail; }
+        }
+
+        override public void PinToStart()
+        {
+            base.PinToStart("GoProPhotosViewDetail", "{Title}", "{Summary}", "{ImageUrl}");
+        }
+
+        override public bool IsShareItemVisible
+        {
+            get { return ViewType == ViewTypes.Detail; }
+        }
+        
+        override public void ShareItem()
+        {
+            base.ShareItem("{Title}", "{Summary}", "{ImageUrl}", "{ImageUrl}");
+        }
+
         override public bool IsRefreshVisible
         {
             get { return ViewType == ViewTypes.List; }

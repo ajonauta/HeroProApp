@@ -10,7 +10,7 @@ namespace AppStudio.Data
         {
             new HtmlSchema
             {
-                Id = "{21ce59bb-3fc8-4c70-8e6f-5b9361486317}",
+                Id = "{bfe6b5a4-0f43-4b0b-a344-3457f23a7c7e}",
                 Content = "PolarPro offers a variety of lenses for the GoPro camera, from magenta to ND. It " +
     "will apply a pro look to your footage.&nbsp;<br><br><a href=\"http://polarpro.com" +
     "\">PolarPro.com</a>"

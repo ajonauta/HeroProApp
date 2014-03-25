@@ -4,14 +4,14 @@
     xmlns:mytoolkit="clr-namespace:MyToolkit.Controls;assembly=MyToolkit.Extended"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone">
 
-    <DataTemplate x:Name="DetailViewHeader">
+    <DataTemplate x:Name="VideoViewHeader">
         <StackPanel Orientation="Horizontal" Margin="0,7,0,0" MaxHeight="225">
-            <TextBlock Text="Detail" FontSize="56" TextWrapping="Wrap" TextTrimming="WordEllipsis" Foreground="{StaticResource AppForegroundColor}" Width="440" />
+            <TextBlock Text="Video" FontSize="56" TextWrapping="Wrap" TextTrimming="WordEllipsis" Foreground="{StaticResource AppForegroundColor}" Width="440" />
         </StackPanel>
     </DataTemplate>
 
     <!-- InstanceTitlePhotoDescription -->
-    <DataTemplate x:Name="DetailViewLayout">
+    <DataTemplate x:Name="VideoViewLayout">
         <Grid Margin="10,5,5,5">
             <ScrollViewer>
                 <StackPanel>

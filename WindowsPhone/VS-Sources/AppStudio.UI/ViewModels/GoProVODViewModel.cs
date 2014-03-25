@@ -18,6 +18,26 @@ namespace AppStudio.Data
             return new GoProVODDataSource(); // YouTubeDataSource
         }
 
+        override public bool IsPinToStartVisible
+        {
+            get { return ViewType == ViewTypes.Detail; }
+        }
+
+        override public void PinToStart()
+        {
+            base.PinToStart("VideoView", "{Title}", "{Summary}", "{ImageUrl}");
+        }
+
+        override public bool IsShareItemVisible
+        {
+            get { return ViewType == ViewTypes.Detail; }
+        }
+        
+        override public void ShareItem()
+        {
+            base.ShareItem("{Title}", "{Summary}", "{VideoUrl}", "{ImageUrl}");
+        }
+
         override public bool IsGoToSourceVisible
         {
             get { return ViewType == ViewTypes.Detail; }
@@ -48,7 +68,7 @@ namespace AppStudio.Data
 
         override protected void NavigateToSelectedItem()
         {
-            NavigationServices.NavigateToPage("DetailView");
+            NavigationServices.NavigateToPage("VideoView");
         }
     }
 }

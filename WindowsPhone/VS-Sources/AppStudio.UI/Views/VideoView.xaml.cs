@@ -17,11 +17,11 @@ using AppStudio.Services;
 
 namespace AppStudio
 {
-    public partial class DetailView
+    public partial class VideoView
     {
         private bool _isDeepLink = false;
 
-        public DetailView()
+        public VideoView()
         {
             InitializeComponent();
         }

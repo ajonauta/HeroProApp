@@ -10,7 +10,7 @@ namespace AppStudio.Data
         {
             new HtmlSchema
             {
-                Id = "{33aae1bc-ccd6-4493-8a2c-6f4798208df9}",
+                Id = "{e5f5b404-2217-4774-926c-f40ea6e9095a}",
                 Content = "The GoFlex-Arm allows you to maneuver your gopro to the best position<br><br><a h" +
     "ref=\"http://go-mount.com\">Go to go-mount.com\"</a>"
             }

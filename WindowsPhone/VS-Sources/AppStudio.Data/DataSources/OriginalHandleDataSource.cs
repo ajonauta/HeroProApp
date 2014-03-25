@@ -10,7 +10,7 @@ namespace AppStudio.Data
         {
             new HtmlSchema
             {
-                Id = "{18d78e78-ba52-4aae-9a0f-50dcb2d64e7a}",
+                Id = "{9dcb663b-6341-4983-89f1-ff4a3cf77a6f}",
                 Content = "Do you skate? Do you like gopro\'s skate videos, where there are low angle&nbsp;sm" +
     "ooth shots of the skater. They use this mount, the Original Handle.<br><br><a hr" +
     "ef=\"http://originalhandle.com\">OriginalHandle.com\"</a>"

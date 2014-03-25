@@ -10,7 +10,7 @@ namespace AppStudio.Data
         {
             new HtmlSchema
             {
-                Id = "{e9f5e47b-a536-41d3-bd6c-ca535994be7f}",
+                Id = "{aec43878-7e66-4ae3-b0db-65003237e589}",
                 Content = "The RollPro3 is a bag to store all your gopro mounts and gopro camera(s).&nbsp;<b" +
     "r><br><a href=\"http://riseful.com\">Go to Riseful.com</a>"
             }

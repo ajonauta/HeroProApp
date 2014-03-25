@@ -10,7 +10,7 @@ namespace AppStudio.Data
         {
             new HtmlSchema
             {
-                Id = "{55bfce2a-67c7-4ba6-b4d2-0d0f602dbbb2}",
+                Id = "{c7dc811b-cbf3-4bba-afd8-73ae0dd9e5f5}",
                 Content = "The BRLS mount is a suction cup that allows users to mount it on cars and surfboa" +
     "rds<br><br><br><a rel=\"nofollow\" target=\"_blank\" href=\"http://brlshawaii.com\">br" +
     "lshawaii.com</a>"

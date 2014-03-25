@@ -10,7 +10,7 @@ namespace AppStudio.Data
         {
             new HtmlSchema
             {
-                Id = "{854fd83a-7055-4eb6-ba0d-f55b976589fc}",
+                Id = "{0695dd2d-220e-4c31-801e-c7dddd6fdb73}",
                 Content = "The GoPole allows you to capture yourself jumping that massive cliff or hitting t" +
     "he slopes<br><br><br><a href=\"http://gopole.com\" target=\"_blank\">GoPole.com</a>"
             }

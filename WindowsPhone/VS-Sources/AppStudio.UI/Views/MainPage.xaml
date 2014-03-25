@@ -82,9 +82,6 @@
             <appBar:ApplicationBarMenuItem Text="{Binding LocalizedResources.ShareItem, Source={StaticResource LocalizedStrings}}"
                                          Command="{Binding ElementName=Container, Path=SelectedItem.Content.ShareItemCommand}"
                                          IsVisible="{Binding ElementName=Container, Path=SelectedItem.Content.IsShareItemVisible}" />
-            <appBar:ApplicationBarMenuItem Text="{Binding LocalizedResources.About, Source={StaticResource LocalizedStrings}}"
-                                         Command="{Binding AboutCommand}"
-                                         IsVisible="{Binding IsAboutVisible}" />
           </appBar:ApplicationBarBehavior.MenuItems>
         </appBar:ApplicationBarBehavior>
       </interactive:Interaction.Behaviors>

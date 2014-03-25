@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{37ae04d3-1e7c-4146-804b-a2d7ef070135}</ProjectGuid>
+    <ProjectGuid>{b7fe4d49-f0a9-47cc-8243-f7a3b2a5293b}</ProjectGuid>
     <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -107,8 +107,8 @@
     <Content Include="Views\DataTemplates\GoProPhotosView.xaml" />
     <Content Include="Views\DataTemplates\GoProMountsView.xaml" />
     <Content Include="Views\DataTemplates\AboutView.xaml" />
-    <Content Include="Views\DataTemplates\DetailView.xaml" />
-    <Content Include="Views\DataTemplates\DetailView1.xaml" />
+    <Content Include="Views\DataTemplates\VideoView.xaml" />
+    <Content Include="Views\DataTemplates\VideoView1.xaml" />
     <Content Include="Views\DataTemplates\GoProPhotosViewDetail.xaml" />
     <Content Include="Views\DataTemplates\BRLSMountView.xaml" />
     <Content Include="Views\DataTemplates\GoPoleView.xaml" />
@@ -165,7 +165,6 @@
     <Compile Include="Services\SpeechServices.cs" />
     <Compile Include="Services\TileServices.cs" />
     <Compile Include="Services\NavigationServices.cs" />
-    <Compile Include="ViewModels\AboutThisAppViewModel.cs" />
     <Compile Include="ViewModels\MainViewModels.cs" />
     <Compile Include="ViewModels\AppViewModel.cs" />
     <Compile Include="ViewModels\GoProVODViewModel.cs" />
@@ -181,9 +180,6 @@
     <Compile Include="ViewModels\OriginalHandleViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Views\AboutThisAppPage.xaml.cs">
-      <DependentUpon>AboutThisAppPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\ImageViewer.xaml.cs">
       <DependentUpon>ImageViewer.xaml</DependentUpon>
     </Compile>
@@ -208,11 +204,11 @@
     <Compile Include="Views\OriginalHandleView.xaml.cs">
       <DependentUpon>OriginalHandleView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\DetailView.xaml.cs">
-      <DependentUpon>DetailView.xaml</DependentUpon>
+    <Compile Include="Views\VideoView.xaml.cs">
+      <DependentUpon>VideoView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\DetailView1.xaml.cs">
-      <DependentUpon>DetailView1.xaml</DependentUpon>
+    <Compile Include="Views\VideoView1.xaml.cs">
+      <DependentUpon>VideoView1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\GoProPhotosViewDetail.xaml.cs">
       <DependentUpon>GoProPhotosViewDetail.xaml</DependentUpon>
@@ -223,10 +219,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="Views\AboutThisAppPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\ImageViewer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -259,11 +251,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\DetailView.xaml">
+    <Page Include="Views\VideoView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\DetailView1.xaml">
+    <Page Include="Views\VideoView1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -324,7 +316,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppStudio.Data\AppStudio.Data.csproj">
-      <Project>{a8bdf599-9151-4c26-954e-2b2a1afaea9a}</Project>
+      <Project>{5e8385ff-8814-4d4a-8212-20ac9c2fb9f9}</Project>
       <Name>AppStudio.Data</Name>
     </ProjectReference>
   </ItemGroup>

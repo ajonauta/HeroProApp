@@ -19,8 +19,8 @@
                 <ResourceDictionary Source="Views/DataTemplates/GoProPhotosView.xaml"/>
                 <ResourceDictionary Source="Views/DataTemplates/GoProMountsView.xaml"/>
                 <ResourceDictionary Source="Views/DataTemplates/AboutView.xaml"/>
-                <ResourceDictionary Source="Views/DataTemplates/DetailView.xaml"/>
-                <ResourceDictionary Source="Views/DataTemplates/DetailView1.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/VideoView.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/VideoView1.xaml"/>
                 <ResourceDictionary Source="Views/DataTemplates/GoProPhotosViewDetail.xaml"/>
                 <ResourceDictionary Source="Views/DataTemplates/BRLSMountView.xaml"/>
                 <ResourceDictionary Source="Views/DataTemplates/GoPoleView.xaml"/>
