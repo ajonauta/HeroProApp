@@ -9,7 +9,6 @@ You can choose either the HTML5 app or the native one
 
 HeroPro is based on [GoPro WIFI hack repo](https://github.com/KonradIT/goprowifihack)
 
-![HeroProApp.GoPro.HERO](images/heroproapplogo-squared.png)
 
 Cameras
 --------
