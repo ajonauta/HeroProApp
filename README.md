@@ -68,7 +68,7 @@ you can also donate in my website http://chernowii.com in the gopro hack section
 Status
 ------
 
-Follow #heropro on twitter and instagram
+Follow #heropro on [twitter](https://twitter.com/search?q=%23heropro&src=typd&f=realtime)
 
 Thanks
 -------
