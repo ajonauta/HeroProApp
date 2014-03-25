@@ -6,69 +6,37 @@ using AppStudio.Services;
 
 namespace AppStudio.Data
 {
-    public class GPTipsTricksViewModel : ViewModelBase<YouTubeSchema>
+    public class GPTipsTricksViewModel : ViewModelBase<MenuSchema>
     {
         override protected string CacheKey
         {
             get { return "GPTipsTricksDataSource"; }
         }
 
-        override protected IDataSource<YouTubeSchema> CreateDataSource()
+        override protected IDataSource<MenuSchema> CreateDataSource()
         {
-            return new GPTipsTricksDataSource(); // YouTubeDataSource
+            return new GPTipsTricksDataSource(); // MenuDataSource
         }
 
-        override public bool IsPinToStartVisible
+        override public bool IsStaticData
         {
-            get { return ViewType == ViewTypes.Detail; }
-        }
-
-        override public void PinToStart()
-        {
-            base.PinToStart("VideoView1", "{Title}", "{Summary}", "{ImageUrl}");
-        }
-
-        override public bool IsShareItemVisible
-        {
-            get { return ViewType == ViewTypes.Detail; }
-        }
-        
-        override public void ShareItem()
-        {
-            base.ShareItem("{Title}", "{Summary}", "{VideoUrl}", "{ImageUrl}");
-        }
-
-        override public bool IsGoToSourceVisible
-        {
-            get { return ViewType == ViewTypes.Detail; }
-        }
-        
-        override public void GoToSource()
-        {
-            base.GoToSource("{ExternalUrl}");
-        }
-
-        override public bool IsRefreshVisible
-        {
-            get { return ViewType == ViewTypes.List; }
-        }
-
-        override public void ImageTap(string url)
-        {
-            var currentItem = GetCurrentItem();
-            if (currentItem != null)
-            {
-                MyToolkit.Multimedia.YouTube.Play(currentItem.VideoId, MyToolkit.Multimedia.YouTubeQuality.Quality480P, e =>
-                {
-                    if (e != null)
-                        System.Windows.MessageBox.Show(e.Message);
-                });
-            }
+            get { return true; }
         }
 
         override protected void NavigateToSelectedItem()
         {
-            NavigationServices.NavigateToPage("VideoView1");
+            var currentItem = GetCurrentItem();
+            if (currentItem != null)
+            {
+                if (currentItem.GetValue("Type").EqualNoCase("Section"))
+                {
+                    NavigationServices.NavigateToPage(currentItem.GetValue("Target"));
+                }
+                else
+                {
+                    NavigationServices.NavigateTo(new Uri(currentItem.GetValue("Target"), UriKind.Absolute));
+                }
+            }
         }
     }
 }

@@ -10,7 +10,7 @@ namespace AppStudio.Data
         {
             new HtmlSchema
             {
-                Id = "{8a066445-7fdd-4768-b065-071f2e109154}",
+                Id = "{494df0cf-446b-4d01-802e-7c743052788d}",
                 Content = @"Make sure you are connected to the GoPro Wifi and you have 3G/4G
 <br><br>HeroProApp works on the browser.
 <br><br><a rel=""nofollow"" target=""_blank"" href=""http://m.heropro.chernowii.com""><span class=""wysiwyg-font-size-larger"">Go to HeroProApp in Browser</span></a>"

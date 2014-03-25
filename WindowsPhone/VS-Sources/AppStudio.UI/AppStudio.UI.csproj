@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{b7fe4d49-f0a9-47cc-8243-f7a3b2a5293b}</ProjectGuid>
+    <ProjectGuid>{874f1164-e341-4c9d-8983-f6c403e719e4}</ProjectGuid>
     <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -108,7 +108,12 @@
     <Content Include="Views\DataTemplates\GoProMountsView.xaml" />
     <Content Include="Views\DataTemplates\AboutView.xaml" />
     <Content Include="Views\DataTemplates\VideoView.xaml" />
-    <Content Include="Views\DataTemplates\VideoView1.xaml" />
+    <Content Include="Views\DataTemplates\GoProTipsView.xaml" />
+    <Content Include="Views\DataTemplates\GPTipView.xaml" />
+    <Content Include="Views\DataTemplates\GPAthleteTipsView.xaml" />
+    <Content Include="Views\DataTemplates\GPAthleteTipView.xaml" />
+    <Content Include="Views\DataTemplates\GoProDIYView.xaml" />
+    <Content Include="Views\DataTemplates\GoProDIYView1.xaml" />
     <Content Include="Views\DataTemplates\GoProPhotosViewDetail.xaml" />
     <Content Include="Views\DataTemplates\BRLSMountView.xaml" />
     <Content Include="Views\DataTemplates\GoPoleView.xaml" />
@@ -116,6 +121,11 @@
     <Content Include="Views\DataTemplates\GoFlexArmView.xaml" />
     <Content Include="Views\DataTemplates\PolarProView.xaml" />
     <Content Include="Views\DataTemplates\OriginalHandleView.xaml" />
+    <Content Include="Views\DataTemplates\SRPView.xaml" />
+    <Content Include="Views\DataTemplates\DJIPhantomView.xaml" />
+    <Content Include="Views\DataTemplates\EasyGimbalView.xaml" />
+    <Content Include="Views\DataTemplates\TheBobberView.xaml" />
+    <Content Include="Views\DataTemplates\SandmarcTripodMountView.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Icons\Dark\GoToSource.png" />
@@ -132,18 +142,26 @@
     <Content Include="Assets\Icons\Light\TextToSpeech.png" />
     <Content Include="Assets\AlignmentGrid.png" />
     <Content Include="Assets\NoImage.png" />
-    <Content Include="Assets\Tiles\heroproapplogo-squared-app.png" />
+    <Content Include="Assets\Tiles\heroproapplogo-squared-4.png" />
     <Content Include="Assets\Tiles\heroproapplogo-squared.png" />
     <Content Include="Assets\Tiles\heroproapplogo-squared-1.png" />
     <Content Include="Assets\Tiles\heroproapplogo-tilelarge-1.png" />
     <Content Include="Assets\LockScreenImage.jpg" />
-    <Content Include="Assets\DataImages\heroproapplogo-squared-app.png" />
+    <Content Include="Assets\DataImages\heroproapplogo-squared-4.png" />
+    <Content Include="Assets\DataImages\gptips.png" />
+    <Content Include="Assets\DataImages\gpathlete.png" />
+    <Content Include="Assets\DataImages\GPDIY.png" />
     <Content Include="Assets\DataImages\brls.png" />
     <Content Include="Assets\DataImages\gopole.png" />
     <Content Include="Assets\DataImages\rollpro.png" />
     <Content Include="Assets\DataImages\goflexarm.png" />
     <Content Include="Assets\DataImages\polarpro.png" />
     <Content Include="Assets\DataImages\originalhandle.png" />
+    <Content Include="Assets\DataImages\blurfixsrp.png" />
+    <Content Include="Assets\DataImages\phantomdji.png" />
+    <Content Include="Assets\DataImages\easygimbal.png" />
+    <Content Include="Assets\DataImages\bobber.png" />
+    <Content Include="Assets\DataImages\sandmarctripod.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -172,12 +190,20 @@
     <Compile Include="ViewModels\GoProPhotosViewModel.cs" />
     <Compile Include="ViewModels\GoProMountsViewModel.cs" />
     <Compile Include="ViewModels\AboutViewModel.cs" />
+    <Compile Include="ViewModels\GoProTipsViewModel.cs" />
+    <Compile Include="ViewModels\GPAthleteTipsViewModel.cs" />
+    <Compile Include="ViewModels\GoProDIYViewModel.cs" />
     <Compile Include="ViewModels\BRLSMountViewModel.cs" />
     <Compile Include="ViewModels\GoPoleViewModel.cs" />
     <Compile Include="ViewModels\RollPro3ViewModel.cs" />
     <Compile Include="ViewModels\GoFlexArmViewModel.cs" />
     <Compile Include="ViewModels\PolarProViewModel.cs" />
     <Compile Include="ViewModels\OriginalHandleViewModel.cs" />
+    <Compile Include="ViewModels\SRPViewModel.cs" />
+    <Compile Include="ViewModels\DJIPhantomViewModel.cs" />
+    <Compile Include="ViewModels\EasyGimbalViewModel.cs" />
+    <Compile Include="ViewModels\TheBobberViewModel.cs" />
+    <Compile Include="ViewModels\SandmarcTripodMountViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Views\ImageViewer.xaml.cs">
@@ -185,6 +211,15 @@
     </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GoProTipsView.xaml.cs">
+      <DependentUpon>GoProTipsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GPAthleteTipsView.xaml.cs">
+      <DependentUpon>GPAthleteTipsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GoProDIYView.xaml.cs">
+      <DependentUpon>GoProDIYView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\BRLSMountView.xaml.cs">
       <DependentUpon>BRLSMountView.xaml</DependentUpon>
@@ -204,11 +239,32 @@
     <Compile Include="Views\OriginalHandleView.xaml.cs">
       <DependentUpon>OriginalHandleView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SRPView.xaml.cs">
+      <DependentUpon>SRPView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DJIPhantomView.xaml.cs">
+      <DependentUpon>DJIPhantomView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EasyGimbalView.xaml.cs">
+      <DependentUpon>EasyGimbalView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TheBobberView.xaml.cs">
+      <DependentUpon>TheBobberView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SandmarcTripodMountView.xaml.cs">
+      <DependentUpon>SandmarcTripodMountView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\VideoView.xaml.cs">
       <DependentUpon>VideoView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\VideoView1.xaml.cs">
-      <DependentUpon>VideoView1.xaml</DependentUpon>
+    <Compile Include="Views\GPTipView.xaml.cs">
+      <DependentUpon>GPTipView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GPAthleteTipView.xaml.cs">
+      <DependentUpon>GPAthleteTipView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GoProDIYView1.xaml.cs">
+      <DependentUpon>GoProDIYView1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\GoProPhotosViewDetail.xaml.cs">
       <DependentUpon>GoProPhotosViewDetail.xaml</DependentUpon>
@@ -224,6 +280,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GoProTipsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GPAthleteTipsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GoProDIYView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -251,11 +319,39 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\SRPView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DJIPhantomView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EasyGimbalView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TheBobberView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SandmarcTripodMountView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\VideoView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\VideoView1.xaml">
+    <Page Include="Views\GPTipView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GPAthleteTipView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GoProDIYView1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -316,7 +412,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppStudio.Data\AppStudio.Data.csproj">
-      <Project>{5e8385ff-8814-4d4a-8212-20ac9c2fb9f9}</Project>
+      <Project>{d850515b-2edb-45fb-b19e-9b07db6f736d}</Project>
       <Name>AppStudio.Data</Name>
     </ProjectReference>
   </ItemGroup>

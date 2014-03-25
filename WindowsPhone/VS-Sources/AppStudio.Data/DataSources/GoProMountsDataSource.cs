@@ -56,6 +56,46 @@ namespace AppStudio.Data
                 Icon = "/Assets/DataImages/originalhandle.png",
                 Target = "OriginalHandleView",
             },
+            new MenuSchema
+            {
+                Id = "{00000000-0000-0000-0000-000000000000}",
+                Type = "Section",
+                Title = "SRP",
+                Icon = "/Assets/DataImages/blurfixsrp.png",
+                Target = "SRPView",
+            },
+            new MenuSchema
+            {
+                Id = "{00000000-0000-0000-0000-000000000000}",
+                Type = "Section",
+                Title = "DJI Phantom",
+                Icon = "/Assets/DataImages/phantomdji.png",
+                Target = "DJIPhantomView",
+            },
+            new MenuSchema
+            {
+                Id = "{00000000-0000-0000-0000-000000000000}",
+                Type = "Section",
+                Title = "Easy Gimbal",
+                Icon = "/Assets/DataImages/easygimbal.png",
+                Target = "EasyGimbalView",
+            },
+            new MenuSchema
+            {
+                Id = "{00000000-0000-0000-0000-000000000000}",
+                Type = "Section",
+                Title = "The Bobber",
+                Icon = "/Assets/DataImages/bobber.png",
+                Target = "TheBobberView",
+            },
+            new MenuSchema
+            {
+                Id = "{00000000-0000-0000-0000-000000000000}",
+                Type = "Section",
+                Title = "Sandmarc Tripod Mount",
+                Icon = "/Assets/DataImages/sandmarctripod.png",
+                Target = "SandmarcTripodMountView",
+            },
 		};
 
         public async Task<IEnumerable<MenuSchema>> LoadData()

@@ -28,7 +28,7 @@
   <Color x:Key="AppBarBackgroundColor">#212021</Color>
 
   <!-- Images -->
-  <BitmapImage x:Key="AppLogoImage" UriSource="/Assets/DataImages/heroproapplogo-squared-app.png"/>
+  <BitmapImage x:Key="AppLogoImage" UriSource="/Assets/DataImages/heroproapplogo-squared-4.png"/>
   <BitmapImage x:Key="NoImage" UriSource="/Assets/NoImage.png"/>
 
   <SolidColorBrush x:Key="AppBackground" Color="#000000" />

@@ -1,5 +1,5 @@
 <phone:PhoneApplicationPage
-    x:Class="AppStudio.VideoView1"
+    x:Class="AppStudio.GoProDIYView1"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -38,8 +38,8 @@
   <Grid x:Name="LayoutRoot" Background="{StaticResource AppBackgroundColor}">
       <phone:Pivot Name="Container" Grid.Row="0" Foreground="{StaticResource AppForegroundColor}" Background="{StaticResource AppBackground}" SelectionChanged="OnSelectionChanged" toolkit:TiltEffect.IsTiltEnabled="True"
                     TitleTemplate="{StaticResource AppPivotTitle}"
-                    HeaderTemplate="{StaticResource VideoView1Header}"
-                    ItemTemplate="{StaticResource VideoView1Layout}"
+                    HeaderTemplate="{StaticResource GoProDIYView1Header}"
+                    ItemTemplate="{StaticResource GoProDIYView1Layout}"
                     ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
             
         </phone:Pivot>

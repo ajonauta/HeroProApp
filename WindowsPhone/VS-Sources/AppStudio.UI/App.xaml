@@ -20,7 +20,12 @@
                 <ResourceDictionary Source="Views/DataTemplates/GoProMountsView.xaml"/>
                 <ResourceDictionary Source="Views/DataTemplates/AboutView.xaml"/>
                 <ResourceDictionary Source="Views/DataTemplates/VideoView.xaml"/>
-                <ResourceDictionary Source="Views/DataTemplates/VideoView1.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/GoProTipsView.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/GPTipView.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/GPAthleteTipsView.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/GPAthleteTipView.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/GoProDIYView.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/GoProDIYView1.xaml"/>
                 <ResourceDictionary Source="Views/DataTemplates/GoProPhotosViewDetail.xaml"/>
                 <ResourceDictionary Source="Views/DataTemplates/BRLSMountView.xaml"/>
                 <ResourceDictionary Source="Views/DataTemplates/GoPoleView.xaml"/>
@@ -28,6 +33,11 @@
                 <ResourceDictionary Source="Views/DataTemplates/GoFlexArmView.xaml"/>
                 <ResourceDictionary Source="Views/DataTemplates/PolarProView.xaml"/>
                 <ResourceDictionary Source="Views/DataTemplates/OriginalHandleView.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/SRPView.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/DJIPhantomView.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/EasyGimbalView.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/TheBobberView.xaml"/>
+                <ResourceDictionary Source="Views/DataTemplates/SandmarcTripodMountView.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
             <sys:String x:Key="AppName">HeroProApp</sys:String>

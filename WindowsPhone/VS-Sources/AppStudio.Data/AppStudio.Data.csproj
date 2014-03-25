@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5e8385ff-8814-4d4a-8212-20ac9c2fb9f9}</ProjectGuid>
+    <ProjectGuid>{d850515b-2edb-45fb-b19e-9b07db6f736d}</ProjectGuid>
     <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -109,6 +109,9 @@
     <Compile Include="DataSources\AppDataSource.cs" />
     <Compile Include="DataSources\GoProVODDataSource.cs" />
     <Compile Include="DataSources\GPTipsTricksDataSource.cs" />
+    <Compile Include="DataSources\GoProTipsDataSource.cs" />
+    <Compile Include="DataSources\GPAthleteTipsDataSource.cs" />
+    <Compile Include="DataSources\GoProDIYDataSource.cs" />
     <Compile Include="DataSources\GoProPhotosDataSource.cs" />
     <Compile Include="DataSources\GoProMountsDataSource.cs" />
     <Compile Include="DataSources\BRLSMountDataSource.cs" />
@@ -117,6 +120,11 @@
     <Compile Include="DataSources\GoFlexArmDataSource.cs" />
     <Compile Include="DataSources\PolarProDataSource.cs" />
     <Compile Include="DataSources\OriginalHandleDataSource.cs" />
+    <Compile Include="DataSources\SRPDataSource.cs" />
+    <Compile Include="DataSources\DJIPhantomDataSource.cs" />
+    <Compile Include="DataSources\EasyGimbalDataSource.cs" />
+    <Compile Include="DataSources\TheBobberDataSource.cs" />
+    <Compile Include="DataSources\SandmarcTripodMountDataSource.cs" />
     <Compile Include="DataSources\AboutDataSource.cs" />
   </ItemGroup>
   <ItemGroup>

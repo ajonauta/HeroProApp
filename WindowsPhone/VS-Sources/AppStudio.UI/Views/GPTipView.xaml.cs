@@ -17,36 +17,36 @@ using AppStudio.Services;
 
 namespace AppStudio
 {
-    public partial class VideoView1
+    public partial class GPTipView
     {
         private bool _isDeepLink = false;
 
-        public VideoView1()
+        public GPTipView()
         {
             InitializeComponent();
         }
 
-        public GPTipsTricksViewModel GPTipsTricksViewModel { get; private set; }
+        public GoProTipsViewModel GoProTipsViewModel { get; private set; }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            GPTipsTricksViewModel = NavigationServices.CurrentViewModel as GPTipsTricksViewModel;
+            GoProTipsViewModel = NavigationServices.CurrentViewModel as GoProTipsViewModel;
             if (e.NavigationMode == NavigationMode.New && NavigationContext.QueryString.ContainsKey("id"))
             {
                 string id = NavigationContext.QueryString["id"];
                 if (!String.IsNullOrEmpty(id))
                 {
                     _isDeepLink = true;
-                    GPTipsTricksViewModel = new GPTipsTricksViewModel();
-                    NavigationServices.CurrentViewModel = GPTipsTricksViewModel;
-                    GPTipsTricksViewModel.LoadItem(id);
+                    GoProTipsViewModel = new GoProTipsViewModel();
+                    NavigationServices.CurrentViewModel = GoProTipsViewModel;
+                    GoProTipsViewModel.LoadItem(id);
                 }
             }
-            if (GPTipsTricksViewModel != null)
+            if (GoProTipsViewModel != null)
             {
-                GPTipsTricksViewModel.ViewType = ViewTypes.Detail;
+                GoProTipsViewModel.ViewType = ViewTypes.Detail;
             }
-            DataContext = GPTipsTricksViewModel;
+            DataContext = GoProTipsViewModel;
             base.OnNavigatedTo(e);
         }
 

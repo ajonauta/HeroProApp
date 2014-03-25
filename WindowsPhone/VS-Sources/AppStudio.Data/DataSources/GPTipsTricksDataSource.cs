@@ -4,36 +4,46 @@ using System.Threading.Tasks;
 
 namespace AppStudio.Data
 {
-    public class GPTipsTricksDataSource : IDataSource<YouTubeSchema>
+    public class GPTipsTricksDataSource : IDataSource<MenuSchema>
     {
-        private const string _url = @"https://gdata.youtube.com/feeds/api/users/kylemartn101/uploads?start-index=1&max-results=20&v=2";
-
-        private IEnumerable<YouTubeSchema> _data = null;
-
-        public GPTipsTricksDataSource()
-        {
-        }
-
-        public async Task<IEnumerable<YouTubeSchema>> LoadData()
-        {
-            if (_data == null)
+        private readonly IEnumerable<MenuSchema> _data = new MenuSchema[]
+		{
+            new MenuSchema
             {
-                try
-                {
-                    var youTubeDataProvider = new YouTubeDataProvider(_url);
-                    _data = await youTubeDataProvider.Load();
-                }
-                catch (Exception ex)
-                {
-                    AppLogs.WriteError("GPTipsTricksDataSource.LoadData", ex.ToString());
-                }
-            }
-            return _data;
+                Id = "{00000000-0000-0000-0000-000000000000}",
+                Type = "Section",
+                Title = "GoPro Tips",
+                Icon = "/Assets/DataImages/gptips.png",
+                Target = "GoProTipsView",
+            },
+            new MenuSchema
+            {
+                Id = "{00000000-0000-0000-0000-000000000000}",
+                Type = "Section",
+                Title = "GP Athlete Tips",
+                Icon = "/Assets/DataImages/gpathlete.png",
+                Target = "GPAthleteTipsView",
+            },
+            new MenuSchema
+            {
+                Id = "{00000000-0000-0000-0000-000000000000}",
+                Type = "Section",
+                Title = "GoPro DIY",
+                Icon = "/Assets/DataImages/GPDIY.png",
+                Target = "GoProDIYView",
+            },
+		};
+
+        public async Task<IEnumerable<MenuSchema>> LoadData()
+        {
+            return await Task.Run(() =>
+            {
+                return _data;
+            });
         }
 
-        public async Task<IEnumerable<YouTubeSchema>> Refresh()
+        public async Task<IEnumerable<MenuSchema>> Refresh()
         {
-            _data = null;
             return await LoadData();
         }
     }
