@@ -2,7 +2,7 @@
 
 The power of GoPro and the opensource HTML GoPro App are ported to the green robot.
 
-#####Download HeroProApp here (open link in Android device): http://www.appsgeyser.com/getwidget/HeroProApp
+#####Download HeroProApp here (open link in Android device): http://bit.ly/1dO8krg
 
 The app built in the web technologies you love! HTML5 and JS.
 
