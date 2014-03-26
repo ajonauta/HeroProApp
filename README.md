@@ -23,7 +23,7 @@ An index.html is updated with the latest code.
 Native
 -------
 
-At the moment, only HeroProApp for WP8 Native is available
+Native app for WP8 and Android, iOS coming soon.
 
 Server
 ------
