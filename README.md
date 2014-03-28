@@ -52,6 +52,21 @@ Computer (MacOSX, Windows and Linux): http://pc.heropro.chernowii.com
 
 Mobile (iOS, Android, WP8, Firefox OS, Blackberry OS): http://m.heropro.chernowii.com
 
+#OS
+
+![](http://upload.wikimedia.org/wikipedia/commons/8/83/World_Wide_Smartphone_Sales.png)
+
+According to the graph, android is the most used OS. Android accept to download a APK from the internet and install the app, without any google play fee.
+
+Windows Phone allows to install apps without the market.
+
+iOS is for C/C++ devs, and you have to pay 80$ for publishing your app, no other method is possible.
+
+![Imgur](http://i.imgur.com/sueBe74.png)
+
+I will start publishing the app in Linux Phone OSes, like Ubuntu Phone or Firefox OS.
+
+Be a ***LINUX HERO***
 
 Contribute
 -----------
