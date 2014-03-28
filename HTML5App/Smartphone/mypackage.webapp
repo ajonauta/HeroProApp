@@ -1,0 +1,9 @@
+{
+    "name": "HeroProApp",
+    "package_path" : "http://zip.io/here.zip",
+    "version": "1",
+    "developer": {
+        "name": "Konrad Iturbe",
+        "url": "http://chernowii.com"
+    }
+}
