@@ -1,0 +1,242 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppStudio.Phone.UI", "AppStudio.Phone.UI\AppStudio.Phone.UI.csproj", "{0b5b9ed9-e2ef-4395-8da6-fb13026779ea}"
+EndProject
+
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppStudio.Phone.Data", "AppStudio.Phone.Data\AppStudio.Phone.Data.csproj", "{2e1562a2-2ce7-4bee-96ba-ce703fc9a990}"
+EndProject
+
+    
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4e34959c-602b-43ff-ab5d-ac37e4381d8a}"
+            
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.config = .nuget\NuGet.config
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+            
+EndProject
+    
+    
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{220b8029-77b1-4a25-9636-d88972ae6b72}"
+            
+	ProjectSection(SolutionItems) = preProject
+		Lib\WPAppStudio.Shared2.dll = Lib\WPAppStudio.Shared2.dll
+	EndProjectSection
+            
+EndProject
+    
+    
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataImages", "DataImages", "{2c5760e1-5077-4da0-8f3e-6c16a6581b37}"
+            
+	ProjectSection(SolutionItems) = preProject
+		Shared\Assets\DataImages\gptips.png = Shared\Assets\DataImages\gptips.png
+		Shared\Assets\DataImages\gpathlete.png = Shared\Assets\DataImages\gpathlete.png
+		Shared\Assets\DataImages\GPDIY.png = Shared\Assets\DataImages\GPDIY.png
+		Shared\Assets\DataImages\brls.png = Shared\Assets\DataImages\brls.png
+		Shared\Assets\DataImages\gopole.png = Shared\Assets\DataImages\gopole.png
+		Shared\Assets\DataImages\rollpro.png = Shared\Assets\DataImages\rollpro.png
+		Shared\Assets\DataImages\goflexarm.png = Shared\Assets\DataImages\goflexarm.png
+		Shared\Assets\DataImages\polarpro.png = Shared\Assets\DataImages\polarpro.png
+		Shared\Assets\DataImages\originalhandle.png = Shared\Assets\DataImages\originalhandle.png
+		Shared\Assets\DataImages\blurfixsrp.png = Shared\Assets\DataImages\blurfixsrp.png
+		Shared\Assets\DataImages\phantomdji.png = Shared\Assets\DataImages\phantomdji.png
+		Shared\Assets\DataImages\easygimbal.png = Shared\Assets\DataImages\easygimbal.png
+		Shared\Assets\DataImages\bobber.png = Shared\Assets\DataImages\bobber.png
+		Shared\Assets\DataImages\sandmarctripod.png = Shared\Assets\DataImages\sandmarctripod.png
+	EndProjectSection
+            
+EndProject
+    
+    
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{3abaf33e-c392-451e-9731-f467f56af5ce}"
+            
+	ProjectSection(SolutionItems) = preProject
+		Shared\Assets\DataImages = Shared\Assets\DataImages
+		Shared\Assets\NoImage.png = Shared\Assets\NoImage.png
+	EndProjectSection
+            
+EndProject
+    
+    
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{cf999503-c118-47aa-8786-8aca93fe2da7}"
+            
+	ProjectSection(SolutionItems) = preProject
+		Shared\Common\BindableBase.cs = Shared\Common\BindableBase.cs
+		Shared\Common\BindableSchemaBase.cs = Shared\Common\BindableSchemaBase.cs
+		Shared\Common\IDataSource.cs = Shared\Common\IDataSource.cs
+		Shared\Common\RssHelper.cs = Shared\Common\RssHelper.cs
+		Shared\Common\Utility.cs = Shared\Common\Utility.cs
+		Shared\Common\ViewModelBase.cs = Shared\Common\ViewModelBase.cs
+	EndProjectSection
+            
+EndProject
+    
+    
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataSchemas", "DataSchemas", "{5b11cc34-28f1-4d70-905b-9599c89819e9}"
+            
+	ProjectSection(SolutionItems) = preProject
+		Shared\DataSchemas\BingSchema.cs = Shared\DataSchemas\BingSchema.cs
+		Shared\DataSchemas\FlickrSchema.cs = Shared\DataSchemas\FlickrSchema.cs
+		Shared\DataSchemas\HtmlSchema.cs = Shared\DataSchemas\HtmlSchema.cs
+		Shared\DataSchemas\MenuSchema.cs = Shared\DataSchemas\MenuSchema.cs
+		Shared\DataSchemas\RssSchema.cs = Shared\DataSchemas\RssSchema.cs
+		Shared\DataSchemas\YouTubeSchema.cs = Shared\DataSchemas\YouTubeSchema.cs
+	EndProjectSection
+            
+EndProject
+    
+    
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataSources", "DataSources", "{19f45d85-b35e-4778-985a-e5b96a1eb9d2}"
+            
+	ProjectSection(SolutionItems) = preProject
+		Shared\DataSources\AppDataSource.cs = Shared\DataSources\AppDataSource.cs
+		Shared\DataSources\GoProVODDataSource.cs = Shared\DataSources\GoProVODDataSource.cs
+		Shared\DataSources\GPTipsTricksDataSource.cs = Shared\DataSources\GPTipsTricksDataSource.cs
+		Shared\DataSources\GoProTipsDataSource.cs = Shared\DataSources\GoProTipsDataSource.cs
+		Shared\DataSources\GPAthleteTipsDataSource.cs = Shared\DataSources\GPAthleteTipsDataSource.cs
+		Shared\DataSources\GoProDIYDataSource.cs = Shared\DataSources\GoProDIYDataSource.cs
+		Shared\DataSources\GoProPhotosDataSource.cs = Shared\DataSources\GoProPhotosDataSource.cs
+		Shared\DataSources\GoProMountsDataSource.cs = Shared\DataSources\GoProMountsDataSource.cs
+		Shared\DataSources\BRLSMountDataSource.cs = Shared\DataSources\BRLSMountDataSource.cs
+		Shared\DataSources\GoPoleDataSource.cs = Shared\DataSources\GoPoleDataSource.cs
+		Shared\DataSources\RollPro3DataSource.cs = Shared\DataSources\RollPro3DataSource.cs
+		Shared\DataSources\GoFlexArmDataSource.cs = Shared\DataSources\GoFlexArmDataSource.cs
+		Shared\DataSources\PolarProDataSource.cs = Shared\DataSources\PolarProDataSource.cs
+		Shared\DataSources\OriginalHandleDataSource.cs = Shared\DataSources\OriginalHandleDataSource.cs
+		Shared\DataSources\SRPDataSource.cs = Shared\DataSources\SRPDataSource.cs
+		Shared\DataSources\DJIPhantomDataSource.cs = Shared\DataSources\DJIPhantomDataSource.cs
+		Shared\DataSources\EasyGimbalDataSource.cs = Shared\DataSources\EasyGimbalDataSource.cs
+		Shared\DataSources\TheBobberDataSource.cs = Shared\DataSources\TheBobberDataSource.cs
+		Shared\DataSources\SandmarcTripodMountDataSource.cs = Shared\DataSources\SandmarcTripodMountDataSource.cs
+		Shared\DataSources\AboutDataSource.cs = Shared\DataSources\AboutDataSource.cs
+	EndProjectSection
+            
+EndProject
+    
+    
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{62d7c35d-eb1a-4b9b-b50d-22d34d9d5b30}"
+            
+	ProjectSection(SolutionItems) = preProject
+		Shared\Assets = Shared\Assets
+		Shared\Common = Shared\Common
+		Shared\DataSchemas = Shared\DataSchemas
+		Shared\DataSources = Shared\DataSources
+	EndProjectSection
+            
+EndProject
+    
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Debug|ARM.ActiveCfg = Debug|ARM
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Debug|ARM.Build.0 = Debug|ARM
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Debug|ARM.Deploy.0 = Debug|ARM
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Debug|x86.ActiveCfg = Debug|x86
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Debug|x86.Build.0 = Debug|x86
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Debug|x86.Deploy.0 = Debug|x86
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Release|Any CPU.Build.0 = Release|Any CPU
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Release|Any CPU.Deploy.0 = Release|Any CPU
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Release|ARM.ActiveCfg = Release|ARM
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Release|ARM.Build.0 = Release|ARM
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Release|ARM.Deploy.0 = Release|ARM
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Release|x86.ActiveCfg = Release|x86
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Release|x86.Build.0 = Release|x86
+        {2e1562a2-2ce7-4bee-96ba-ce703fc9a990}.Release|x86.Deploy.0 = Release|x86
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Debug|ARM.ActiveCfg = Debug|ARM
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Debug|ARM.Build.0 = Debug|ARM
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Debug|ARM.Deploy.0 = Debug|ARM
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Debug|x86.ActiveCfg = Debug|x86
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Debug|x86.Build.0 = Debug|x86
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Debug|x86.Deploy.0 = Debug|x86
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Release|Any CPU.Build.0 = Release|Any CPU
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Release|Any CPU.Deploy.0 = Release|Any CPU
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Release|ARM.ActiveCfg = Release|ARM
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Release|ARM.Build.0 = Release|ARM
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Release|ARM.Deploy.0 = Release|ARM
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Release|x86.ActiveCfg = Release|x86
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Release|x86.Build.0 = Release|x86
+        {0b5b9ed9-e2ef-4395-8da6-fb13026779ea}.Release|x86.Deploy.0 = Release|x86
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Debug|ARM.ActiveCfg = Debug|ARM
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Debug|ARM.Build.0 = Debug|ARM
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Debug|ARM.Deploy.0 = Debug|ARM
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Debug|x86.ActiveCfg = Debug|x86
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Debug|x86.Build.0 = Debug|x86
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Debug|x86.Deploy.0 = Debug|x86
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Release|Any CPU.Build.0 = Release|Any CPU
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Release|ARM.ActiveCfg = Release|ARM
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Release|ARM.Build.0 = Release|ARM
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Release|ARM.Deploy.0 = Release|ARM
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Release|x86.ActiveCfg = Release|x86
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Release|x86.Build.0 = Release|x86
+        {9c56080a-2cbf-4d1d-acd0-ac473b8111c0}.Release|x86.Deploy.0 = Release|x86
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Debug|ARM.ActiveCfg = Debug|ARM
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Debug|ARM.Build.0 = Debug|ARM
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Debug|ARM.Deploy.0 = Debug|ARM
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Debug|x86.ActiveCfg = Debug|x86
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Debug|x86.Build.0 = Debug|x86
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Debug|x86.Deploy.0 = Debug|x86
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Release|Any CPU.Build.0 = Release|Any CPU
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Release|Any CPU.Deploy.0 = Release|Any CPU
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Release|ARM.ActiveCfg = Release|ARM
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Release|ARM.Build.0 = Release|ARM
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Release|ARM.Deploy.0 = Release|ARM
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Release|x86.ActiveCfg = Release|x86
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Release|x86.Build.0 = Release|x86
+        {f6fc7b9e-406d-4cd5-9b56-56942bf42704}.Release|x86.Deploy.0 = Release|x86
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Debug|ARM.ActiveCfg = Debug|ARM
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Debug|ARM.Build.0 = Debug|ARM
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Debug|ARM.Deploy.0 = Debug|ARM
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Debug|x86.ActiveCfg = Debug|x86
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Debug|x86.Build.0 = Debug|x86
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Debug|x86.Deploy.0 = Debug|x86
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Release|Any CPU.Build.0 = Release|Any CPU
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Release|Any CPU.Deploy.0 = Release|Any CPU
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Release|ARM.ActiveCfg = Release|ARM
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Release|ARM.Build.0 = Release|ARM
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Release|ARM.Deploy.0 = Release|ARM
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Release|x86.ActiveCfg = Release|x86
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Release|x86.Build.0 = Release|x86
+        {b0d73ac0-b016-4025-8065-67d57569b980}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2c5760e1-5077-4da0-8f3e-6c16a6581b37} = {3abaf33e-c392-451e-9731-f467f56af5ce}
+		{3abaf33e-c392-451e-9731-f467f56af5ce} = {62d7c35d-eb1a-4b9b-b50d-22d34d9d5b30}
+		{cf999503-c118-47aa-8786-8aca93fe2da7} = {62d7c35d-eb1a-4b9b-b50d-22d34d9d5b30}
+		{5b11cc34-28f1-4d70-905b-9599c89819e9} = {62d7c35d-eb1a-4b9b-b50d-22d34d9d5b30}
+		{19f45d85-b35e-4778-985a-e5b96a1eb9d2} = {62d7c35d-eb1a-4b9b-b50d-22d34d9d5b30}
+	EndGlobalSection
+EndGlobal

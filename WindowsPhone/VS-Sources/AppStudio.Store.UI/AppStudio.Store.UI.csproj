@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{b0d73ac0-b016-4025-8065-67d57569b980}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppStudio</RootNamespace>
+    <AssemblyName>AppStudio</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <!--<PackageCertificateKeyFile>Properties\App_TemporaryKey.pfx</PackageCertificateKeyFile>-->
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="Properties\Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\DataTemplates\AppView.xaml" />
+    <Content Include="Views\DataTemplates\GoProVODView.xaml" />
+    <Content Include="Views\DataTemplates\GPTipsTricksView.xaml" />
+    <Content Include="Views\DataTemplates\GoProPhotosView.xaml" />
+    <Content Include="Views\DataTemplates\GoProMountsView.xaml" />
+    <Content Include="Views\DataTemplates\AboutView.xaml" />
+    <Content Include="Views\DataTemplates\VideoView.xaml" />
+    <Content Include="Views\DataTemplates\GoProTipsView.xaml" />
+    <Content Include="Views\DataTemplates\GPTipView.xaml" />
+    <Content Include="Views\DataTemplates\GPAthleteTipsView.xaml" />
+    <Content Include="Views\DataTemplates\GPAthleteTipView.xaml" />
+    <Content Include="Views\DataTemplates\GoProDIYView.xaml" />
+    <Content Include="Views\DataTemplates\GoProDIYView1.xaml" />
+    <Content Include="Views\DataTemplates\GoProPhotosViewDetail.xaml" />
+    <Content Include="Views\DataTemplates\BRLSMountView.xaml" />
+    <Content Include="Views\DataTemplates\GoPoleView.xaml" />
+    <Content Include="Views\DataTemplates\RollPro3View.xaml" />
+    <Content Include="Views\DataTemplates\GoFlexArmView.xaml" />
+    <Content Include="Views\DataTemplates\PolarProView.xaml" />
+    <Content Include="Views\DataTemplates\OriginalHandleView.xaml" />
+    <Content Include="Views\DataTemplates\SRPView.xaml" />
+    <Content Include="Views\DataTemplates\DJIPhantomView.xaml" />
+    <Content Include="Views\DataTemplates\EasyGimbalView.xaml" />
+    <Content Include="Views\DataTemplates\TheBobberView.xaml" />
+    <Content Include="Views\DataTemplates\SandmarcTripodMountView.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\NoImage.png" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\DataImages\heroproapplogo-squared-4.png" />
+    <Content Include="..\Shared\Assets\DataImages\gptips.png">
+      <Link>Assets\DataImages\gptips.png</Link>
+    </Content>
+    <Content Include="..\Shared\Assets\DataImages\gpathlete.png">
+      <Link>Assets\DataImages\gpathlete.png</Link>
+    </Content>
+    <Content Include="..\Shared\Assets\DataImages\GPDIY.png">
+      <Link>Assets\DataImages\GPDIY.png</Link>
+    </Content>
+    <Content Include="..\Shared\Assets\DataImages\brls.png">
+      <Link>Assets\DataImages\brls.png</Link>
+    </Content>
+    <Content Include="..\Shared\Assets\DataImages\gopole.png">
+      <Link>Assets\DataImages\gopole.png</Link>
+    </Content>
+    <Content Include="..\Shared\Assets\DataImages\rollpro.png">
+      <Link>Assets\DataImages\rollpro.png</Link>
+    </Content>
+    <Content Include="..\Shared\Assets\DataImages\goflexarm.png">
+      <Link>Assets\DataImages\goflexarm.png</Link>
+    </Content>
+    <Content Include="..\Shared\Assets\DataImages\polarpro.png">
+      <Link>Assets\DataImages\polarpro.png</Link>
+    </Content>
+    <Content Include="..\Shared\Assets\DataImages\originalhandle.png">
+      <Link>Assets\DataImages\originalhandle.png</Link>
+    </Content>
+    <Content Include="..\Shared\Assets\DataImages\blurfixsrp.png">
+      <Link>Assets\DataImages\blurfixsrp.png</Link>
+    </Content>
+    <Content Include="..\Shared\Assets\DataImages\phantomdji.png">
+      <Link>Assets\DataImages\phantomdji.png</Link>
+    </Content>
+    <Content Include="..\Shared\Assets\DataImages\easygimbal.png">
+      <Link>Assets\DataImages\easygimbal.png</Link>
+    </Content>
+    <Content Include="..\Shared\Assets\DataImages\bobber.png">
+      <Link>Assets\DataImages\bobber.png</Link>
+    </Content>
+    <Content Include="..\Shared\Assets\DataImages\sandmarctripod.png">
+      <Link>Assets\DataImages\sandmarctripod.png</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Common\NavigationHelper.cs" />
+    <Compile Include="Common\RelayCommand.cs" />
+    <Compile Include="Common\RichTextColumns.cs" />
+    <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Common\ViewModelBase.cs" />
+    <Compile Include="Converters\TextPlainConverter.cs" />
+    <Compile Include="Converters\ThumbnailConverter.cs" />
+    <Compile Include="Services\NotImplementedServices.cs" />
+    <Compile Include="Services\NavigationServices.cs" />
+    <Compile Include="ViewModels\AppViewModel.cs" />
+    <Compile Include="ViewModels\GoProVODViewModel.cs" />
+    <Compile Include="ViewModels\GPTipsTricksViewModel.cs" />
+    <Compile Include="ViewModels\GoProPhotosViewModel.cs" />
+    <Compile Include="ViewModels\GoProMountsViewModel.cs" />
+    <Compile Include="ViewModels\AboutViewModel.cs" />
+    <Compile Include="ViewModels\GoProTipsViewModel.cs" />
+    <Compile Include="ViewModels\GPAthleteTipsViewModel.cs" />
+    <Compile Include="ViewModels\GoProDIYViewModel.cs" />
+    <Compile Include="ViewModels\BRLSMountViewModel.cs" />
+    <Compile Include="ViewModels\GoPoleViewModel.cs" />
+    <Compile Include="ViewModels\RollPro3ViewModel.cs" />
+    <Compile Include="ViewModels\GoFlexArmViewModel.cs" />
+    <Compile Include="ViewModels\PolarProViewModel.cs" />
+    <Compile Include="ViewModels\OriginalHandleViewModel.cs" />
+    <Compile Include="ViewModels\SRPViewModel.cs" />
+    <Compile Include="ViewModels\DJIPhantomViewModel.cs" />
+    <Compile Include="ViewModels\EasyGimbalViewModel.cs" />
+    <Compile Include="ViewModels\TheBobberViewModel.cs" />
+    <Compile Include="ViewModels\SandmarcTripodMountViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\WebControl.xaml.cs">
+      <DependentUpon>WebControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GoProTipsView.xaml.cs">
+      <DependentUpon>GoProTipsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GPAthleteTipsView.xaml.cs">
+      <DependentUpon>GPAthleteTipsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GoProDIYView.xaml.cs">
+      <DependentUpon>GoProDIYView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BRLSMountView.xaml.cs">
+      <DependentUpon>BRLSMountView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GoPoleView.xaml.cs">
+      <DependentUpon>GoPoleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RollPro3View.xaml.cs">
+      <DependentUpon>RollPro3View.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GoFlexArmView.xaml.cs">
+      <DependentUpon>GoFlexArmView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PolarProView.xaml.cs">
+      <DependentUpon>PolarProView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OriginalHandleView.xaml.cs">
+      <DependentUpon>OriginalHandleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SRPView.xaml.cs">
+      <DependentUpon>SRPView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DJIPhantomView.xaml.cs">
+      <DependentUpon>DJIPhantomView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EasyGimbalView.xaml.cs">
+      <DependentUpon>EasyGimbalView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TheBobberView.xaml.cs">
+      <DependentUpon>TheBobberView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SandmarcTripodMountView.xaml.cs">
+      <DependentUpon>SandmarcTripodMountView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VideoView.xaml.cs">
+      <DependentUpon>VideoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GPTipView.xaml.cs">
+      <DependentUpon>GPTipView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GPAthleteTipView.xaml.cs">
+      <DependentUpon>GPAthleteTipView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GoProDIYView1.xaml.cs">
+      <DependentUpon>GoProDIYView1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GoProPhotosViewDetail.xaml.cs">
+      <DependentUpon>GoProPhotosViewDetail.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="Controls\WebControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GoProTipsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GPAthleteTipsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GoProDIYView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\BRLSMountView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GoPoleView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RollPro3View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GoFlexArmView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PolarProView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OriginalHandleView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SRPView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DJIPhantomView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EasyGimbalView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TheBobberView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SandmarcTripodMountView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VideoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GPTipView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GPAthleteTipView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GoProDIYView1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GoProPhotosViewDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+        <Page Include="Styles\StandardStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\AppStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+      <PRIResource Include="Strings\en-US\Resources.resw">
+        <SubType>Designer</SubType>
+      </PRIResource>
+    </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\netcore45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppStudio.Store.Data\AppStudio.Store.Data.csproj">
+      <Project>{f6fc7b9e-406d-4cd5-9b56-56942bf42704}</Project>
+      <Name>AppStudio.Store.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
