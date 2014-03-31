@@ -1,5 +1,5 @@
 #HeroProApp for Chrome
 
-Generated with XDK, missing the crx which i will add later on.
+A port of HeroProApp to Google Chrome Packaged App.
 
-![](http://i.imgur.com/WA0P5ni.png)
+![](http://i.imgur.com/dJFzEEE.png)
