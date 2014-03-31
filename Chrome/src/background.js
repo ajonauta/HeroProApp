@@ -1,2 +1,6 @@
-chrome.app.runtime.onLaunched.addListener(function() {   chrome.app.window.create('index.html', {     frame: 'chrome', bounds: { width: 800, height: 900}, minWidth:800, minHeight: 900   }); }); chrome.commands.onCommand.addListener(function(command) {    console.log("Command triggered: " + command);    if (command == "cmdNew") {      chrome.app.window.create('index.html', {        frame: 'chrome', bounds: { width: 800, height: 900}, minWidth:800, minHeight: 900      });    } }); 
-//This is where the width and height params of the app are located!
+chrome.app.runtime.onLaunched.addListener(function() {
+	var window = chrome.app.window.create('index.html', {
+	},function(createdWindow){
+		createdWindow.maximize();
+	});
+});
