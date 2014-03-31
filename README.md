@@ -23,7 +23,7 @@ An index.html is updated with the latest code.
 Native
 -------
 
-Native app for WP8 and Android, iOS coming soon.
+Native app for WP8 and Android, iOS, Tizen and Google Chrome App. Windows PC Exe and MacOSX App are in WIP.
 
 Server
 ------
