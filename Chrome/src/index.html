@@ -15,50 +15,7 @@ html {
 		input, textarea  { -webkit-user-select:text; }
 		body { background-color:white; color:black }
 	</style>
-	<script src="intelxdk.js"></script><script type="text/javascript" charset="utf-8">AppMobi.ischrome = true;AppMobi.app = 'QcNxWMMDNz3k5ZWziZbBq4UU_x9YlJXvIk7dvicJ2IA';AppMobi.package = 'PRODUCTION';AppMobi.webRoot = window.location.href.match('[^/]*//.*[/]{1}')[0];AppMobi.internal = {};AppMobi.internal.analyticsServer = '';</script><script type="text/javascript" src="https://www.google.com/jsapi"></script><script type="text/javascript">google.load('payments', '1.0', {  'packages': ['production_config']});</script>
-	<script type="text/javascript">
-		/* This code is used to run as soon as Intel activates */
-		var onDeviceReady=function(){
-		//hide splash screen
-		intel.xdk.device.hideSplashScreen();
-		};
-		document.addEventListener("intel.xdk.device.ready",onDeviceReady,false);
-	</script>
-    <script type='text/JavaScript'>
-			function getXhr(){
-				var xhr = null;
-				if(window.XMLHttpRequest) // Firefox and others
-					xhr = new XMLHttpRequest();
-				else if(window.ActiveXObject){ // Internet Explorer
-					try {
-						xhr = new ActiveXObject("Msxml2.XMLHTTP");
-					} catch (e) {
-						xhr = new ActiveXObject("Microsoft.XMLHTTP");
-					}
-				}
-				else { // XMLHttpRequest no supported
-					alert("Votre navigateur ne supporte pas les objets XMLHTTPRequest...");
-					xhr = false;
-				}
-				return xhr
-			}
- 
-			/**
-			* Command
-			*/
-			function command(device, app, command){
-				var xhr = getXhr()
- 
-				xhr.onreadystatechange = function(){
- 
-					if(xhr.readyState == 4 && xhr.status == 200){
-						alert(xhr.responseText);
-					}
-				}
-				xhr.open('GET','http://10.5.5.9:80/'+device+'/'+app+'?t='+document.getElementById('wifiPassword').value+'&p='+command);
-				xhr.send(null);
-			}
-		</script>
+    <script src="heropro.js"></script>
 </head>
 <body style="background-color:#A9A9A9;">
 
