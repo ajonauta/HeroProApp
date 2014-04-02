@@ -15,7 +15,17 @@ function getXhr(){
 				}
 				return xhr
 			}
- 
+ //Something strange to get the f*cking chrome app to work:
+ function requestListener() {
+  document.querySelector("#content").innerHTML = this.responseText;
+};
+
+onload = function() {
+  var request = new XMLHttpRequest();
+  request.onload = requestListener;
+  request.open("GET", "content.txt", true);
+  request.send();
+};
 			/**
 			* Command
 			*/
@@ -29,6 +39,6 @@ function getXhr(){
 					}
 				}
 				xhr.open('GET','http://10.5.5.9:80/'+device+'/'+app+'?t='+document.getElementById('wifiPassword').value+'&p='+command);
-				xhr.open('GET',chrome.extension.getURL('manifest.json'), true);
+				
 				xhr.send(null);
 			}
