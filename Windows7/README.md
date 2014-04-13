@@ -9,7 +9,7 @@ A port of HeroProApp for Windows 7 PCs
 * Rename the file ```index.html``` to ```heropro.html```
 
 ![](http://i.imgur.com/bS6xuPI.png)
-* Instert SD back on the camera
+* Insert SD back on the camera
 * Turn on wifi
 * Connect your PC to the GoPro Wifi
 * Wait 5 Seconds
