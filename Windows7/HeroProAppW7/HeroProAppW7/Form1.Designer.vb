@@ -37,7 +37,7 @@ Partial Class HeroProApp
         Me.WebBrowser1.ScriptErrorsSuppressed = True
         Me.WebBrowser1.Size = New System.Drawing.Size(843, 617)
         Me.WebBrowser1.TabIndex = 0
-        Me.WebBrowser1.Url = New System.Uri("http://pc.heropro.chernowii.com", System.UriKind.Absolute)
+        Me.WebBrowser1.Url = New System.Uri("http://10.5.5.9:8080/videos/heropro.html", System.UriKind.Absolute)
         '
         'Label1
         '
@@ -53,9 +53,9 @@ Partial Class HeroProApp
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label2.Location = New System.Drawing.Point(0, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(474, 17)
+        Me.Label2.Size = New System.Drawing.Size(430, 17)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Connect to the internet for the page to load, then connect to the gopro wifi"
+        Me.Label2.Text = "To set up the file inside the gopro server, go to http://git.io/OdOr2A"
         '
         'HeroProApp
         '
