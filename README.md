@@ -23,7 +23,12 @@ An index.html is updated with the latest code.
 Native
 -------
 
-Native app for WP8 and Android, iOS, Tizen and Google Chrome App. Windows PC Exe and MacOSX App are in WIP.
+* Android App: OPEN THIS LINK IN AN ANDROID DEVICE: http://chernowii.com/hpa
+* Chrome App: In WIP, the chrome packaged app does not allow XHR to work, i have followed everything in the internet, still no luck. https://github.com/KonradIT/HeroProApp/tree/gh-pages/Chrome
+* Windows Phone 8 App: OPEN THIS LINK IN A WP8 DEVICE: http://chernowii.com/hpawp8
+* Windows Phone 8.1 App: OPEN THIS LINK IN A WP8.1 DEVICE: http://chernowii.com/hpawp8-1
+* Windows 8 App: OPEN THIS LINK IN A W8.1 TABLET: http://chernowii.com/hpaw8-1
+* Windows 7 App: OPEN THIS LINK IN A Windows 7 PC: http://chernowii.com/hpaw7
 
 Server
 ------
